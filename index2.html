@@ -96,16 +96,16 @@
           </div>
           
           <!-- Quick Stats -->
-          <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
-            <div>
+          <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;">
+            <div style="text-align: center;">
               <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem;">1M+</div>
               <div style="color: var(--text-muted); font-size: 0.875rem;">Learners</div>
             </div>
-            <div>
+            <div style="text-align: center;">
               <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem;">750+</div>
               <div style="color: var(--text-muted); font-size: 0.875rem;">Courses</div>
             </div>
-            <div>
+            <div style="text-align: center;">
               <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem;">50+</div>
               <div style="color: var(--text-muted); font-size: 0.875rem;">Experts</div>
             </div>
@@ -227,13 +227,7 @@
           <p>Access your courses on any device, offline or online, and learn at your own pace and schedule.</p>
         </div>
         
-        <div class="card" style="text-align: center; padding: 2.5rem;">
-          <div class="feature-icon" style="margin: 0 auto 2rem;">
-            <i class="fas fa-headset"></i>
-          </div>
-          <h3 style="margin-bottom: 1rem;">24/7 Support</h3>
-          <p>Get help whenever you need it with our dedicated support team and active learning community.</p>
-        </div>
+        
       </div>
     </div>
   </section>
@@ -280,19 +274,98 @@
   </section>
 
   <!-- Newsletter Section -->
-  <section class="section bg-primary" style="color: white;">
-    <div class="container">
+  <section class="section bg-primary" style="color: white; position: relative; overflow: hidden;">
+    <!-- Modern gradient background -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 50%, #1e293b 100%); z-index: 1;"></div>
+    
+    <!-- Subtle geometric patterns -->
+    <div style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle at 30% 70%, rgba(255,255,255,0.05) 0%, transparent 50%), radial-gradient(circle at 70% 30%, rgba(255,255,255,0.03) 0%, transparent 50%); z-index: 1;"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
       <div style="text-align: center; max-width: 600px; margin: 0 auto;">
-        <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: white;">Stay Updated</h2>
-        <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">Get the latest course updates, learning tips, and exclusive offers delivered to your inbox.</p>
-        <div style="display: flex; gap: 1rem; max-width: 400px; margin: 0 auto;">
-          <input type="email" placeholder="Enter your email" style="flex: 1; padding: 1rem; border: none; border-radius: 12px; font-size: 1rem;">
-          <button class="btn" style="background: white; color: var(--primary); padding: 1rem 2rem; border: none; border-radius: 12px; font-weight: 600; white-space: nowrap;">
+        <h2 style="font-size: clamp(2rem, 4vw, 2.5rem); font-weight: 700; margin-bottom: 1rem; color: white; letter-spacing: -0.02em;">Stay Updated</h2>
+        <p style="font-size: clamp(1rem, 2.5vw, 1.25rem); margin-bottom: 3rem; color: rgba(255,255,255,0.9); line-height: 1.6; font-weight: 400;">Get the latest course updates, learning tips, and exclusive offers delivered to your inbox.</p>
+        
+        <!-- Modern responsive form container -->
+        <div style="display: flex; flex-direction: column; gap: 1rem; max-width: 420px; margin: 0 auto;">
+          <input type="email" placeholder="Enter your email address" style="flex: 1; padding: 1.25rem 1.5rem; border: 2px solid rgba(255,255,255,0.1); border-radius: 16px; font-size: 1rem; background: rgba(255,255,255,0.1); color: white; backdrop-filter: blur(10px); width: 100%; box-sizing: border-box; transition: all 0.3s ease;">
+          <button class="btn" style="background: linear-gradient(135deg, white 0%, #f8fafc 100%); color: var(--primary); padding: 1.25rem 2rem; border: none; border-radius: 16px; font-weight: 600; font-size: 1rem; box-shadow: 0 8px 25px rgba(0,0,0,0.15); cursor: pointer; transition: all 0.3s ease; width: 100%; box-sizing: border-box; letter-spacing: 0.025em;">
+            Subscribe Now
+          </button>
+        </div>
+        
+        <!-- Desktop layout for larger screens -->
+        <div style="display: none; gap: 1rem; max-width: 420px; margin: 2rem auto 0;">
+          <input type="email" placeholder="Enter your email address" style="flex: 1; padding: 1.25rem 1.5rem; border: 2px solid rgba(255,255,255,0.1); border-radius: 16px; font-size: 1rem; background: rgba(255,255,255,0.1); color: white; backdrop-filter: blur(10px); transition: all 0.3s ease;">
+          <button class="btn" style="background: linear-gradient(135deg, white 0%, #f8fafc 100%); color: var(--primary); padding: 1.25rem 2rem; border: none; border-radius: 16px; font-weight: 600; white-space: nowrap; box-shadow: 0 8px 25px rgba(0,0,0,0.15); cursor: pointer; transition: all 0.3s ease; letter-spacing: 0.025em;">
             Subscribe
           </button>
         </div>
+        
+        <!-- Trust indicators -->
+        <div style="margin-top: 2rem; display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap; opacity: 0.8;">
+          <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem;">
+            <i class="fas fa-shield-alt" style="color: rgba(255,255,255,0.7);"></i>
+            <span>Secure & Private</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem;">
+            <i class="fas fa-envelope" style="color: rgba(255,255,255,0.7);"></i>
+            <span>Weekly Updates</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem;">
+            <i class="fas fa-times" style="color: rgba(255,255,255,0.7);"></i>
+            <span>Unsubscribe Anytime</span>
+          </div>
+        </div>
       </div>
     </div>
+    
+    <style>
+      /* Media query for desktop layout */
+      @media (min-width: 640px) {
+        .section.bg-primary div[style*="flex-direction: column"] {
+          display: none !important;
+        }
+        .section.bg-primary div[style*="display: none"] {
+          display: flex !important;
+          margin-top: 0 !important;
+        }
+      }
+      
+      /* Modern input focus and hover effects */
+      .section.bg-primary input:hover {
+        border-color: rgba(255,255,255,0.2);
+        background: rgba(255,255,255,0.15);
+      }
+      
+      .section.bg-primary input:focus {
+        outline: none;
+        border-color: rgba(255,255,255,0.4);
+        background: rgba(255,255,255,0.15);
+        box-shadow: 0 0 0 4px rgba(255,255,255,0.1);
+      }
+      
+      .section.bg-primary input::placeholder {
+        color: rgba(255,255,255,0.7);
+      }
+      
+      /* Modern button hover effects */
+      .section.bg-primary button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+        background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+      }
+      
+      .section.bg-primary button:active {
+        transform: translateY(0);
+      }
+      
+      /* Accessibility focus states */
+      .section.bg-primary button:focus {
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(255,255,255,0.3), 0 8px 25px rgba(0,0,0,0.15);
+      }
+    </style>
   </section>
 
   <!-- Footer -->

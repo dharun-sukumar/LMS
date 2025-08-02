@@ -35,220 +35,170 @@
   </header>
 
   <!-- Registration Section -->
-  <section style="min-height: 100vh; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); position: relative; display: flex; align-items: center;">
-    <!-- Background Pattern -->
-    <div class="bg-pattern-dots-white" style="position: absolute; inset: 0;"></div>
+  <section style="min-height: 100vh; background: #f8fafc; display: flex; align-items: center; padding: 2rem 0;">
     
-    <div class="container" style="position: relative; z-index: 1;">
-      <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; min-height: 80vh;">
+    <div class="container" style="max-width: 1000px; margin: 0 auto; padding: 0 1rem;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
         
         <!-- Left Side - Registration Form -->
-        <div style="background: white; padding: 3rem; border-radius: 24px; box-shadow: var(--shadow-xl); backdrop-filter: blur(10px); position: relative; overflow: hidden; max-height: 90vh; overflow-y: auto;">
-          <!-- Decorative Elements -->
-          <div style="position: absolute; top: -50px; right: -50px; width: 100px; height: 100px; background: linear-gradient(45deg, var(--primary), var(--primary-dark)); border-radius: 50%; opacity: 0.1;"></div>
-          <div style="position: absolute; bottom: -30px; left: -30px; width: 60px; height: 60px; background: linear-gradient(45deg, var(--primary-dark), var(--primary)); border-radius: 50%; opacity: 0.1;"></div>
+        <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
           
-          <div style="position: relative; z-index: 2;">
-            <!-- Header -->
-            <div style="text-align: center; margin-bottom: 2rem;">
-              <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 20px; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);">
-                <i class="fas fa-user-plus" style="color: white; font-size: 2rem;"></i>
-              </div>
-              <h1 style="font-size: 2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Join EduLMS</h1>
-              <p style="color: var(--text-muted); font-size: 1rem;">Start your learning journey today</p>
+          <!-- Header -->
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <div style="width: 48px; height: 48px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 12px; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-user-plus" style="color: white; font-size: 1.25rem;"></i>
             </div>
-            
-            <!-- Social Registration -->
-            <div style="margin-bottom: 2rem;">
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                <button style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; padding: 0.875rem 1rem; border: 2px solid var(--border); border-radius: 12px; background: white; color: var(--text-secondary); font-weight: 500; transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 4px 12px rgba(99, 102, 241, 0.15)'" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                  <i class="fab fa-google" style="color: #ea4335; font-size: 1.25rem;"></i>
-                  <span>Google</span>
-                </button>
-                <button style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; padding: 0.875rem 1rem; border: 2px solid var(--border); border-radius: 12px; background: white; color: var(--text-secondary); font-weight: 500; transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 4px 12px rgba(99, 102, 241, 0.15)'" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
-                  <i class="fab fa-facebook" style="color: #1877f2; font-size: 1.25rem;"></i>
-                  <span>Facebook</span>
-                </button>
-              </div>
-            </div>
-            
-            <!-- Divider -->
-            <div style="position: relative; text-align: center; margin: 2rem 0;">
-              <div style="height: 1px; background: var(--border);"></div>
-              <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 0 1rem; color: var(--text-muted); font-size: 0.875rem;">or sign up with email</span>
-            </div>
-            
-            <!-- Registration Form -->
-            <form>
-              <!-- Name Fields -->
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
-                <div>
-                  <label for="firstName" style="display: block; font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.5rem;">First Name</label>
-                  <div style="position: relative;">
-                    <input type="text" id="firstName" name="firstName" placeholder="First name" required 
-                           style="width: 100%; padding: 0.875rem 1rem 0.875rem 3rem; border: 2px solid var(--border); border-radius: 12px; font-size: 1rem; transition: all 0.3s ease; background: var(--background-alt);" 
-                           onfocus="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 0 0 3px rgba(99, 102, 241, 0.1)'; this.style.background='white'" 
-                           onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none'; this.style.background='var(--background-alt)'">
-                    <i class="fas fa-user" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
-                  </div>
-                </div>
-                <div>
-                  <label for="lastName" style="display: block; font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.5rem;">Last Name</label>
-                  <div style="position: relative;">
-                    <input type="text" id="lastName" name="lastName" placeholder="Last name" required 
-                           style="width: 100%; padding: 0.875rem 1rem 0.875rem 3rem; border: 2px solid var(--border); border-radius: 12px; font-size: 1rem; transition: all 0.3s ease; background: var(--background-alt);" 
-                           onfocus="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 0 0 3px rgba(99, 102, 241, 0.1)'; this.style.background='white'" 
-                           onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none'; this.style.background='var(--background-alt)'">
-                    <i class="fas fa-user" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Email -->
-              <div style="margin-bottom: 1.5rem;">
-                <label for="email" style="display: block; font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.5rem;">Email Address</label>
-                <div style="position: relative;">
-                  <input type="email" id="email" name="email" placeholder="Enter your email address" required 
-                         style="width: 100%; padding: 0.875rem 1rem 0.875rem 3rem; border: 2px solid var(--border); border-radius: 12px; font-size: 1rem; transition: all 0.3s ease; background: var(--background-alt);" 
-                         onfocus="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 0 0 3px rgba(99, 102, 241, 0.1)'; this.style.background='white'" 
-                         onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none'; this.style.background='var(--background-alt)'">
-                  <i class="fas fa-envelope" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
-                </div>
-              </div>
-              
-              <!-- Password -->
-              <div style="margin-bottom: 1rem;">
-                <label for="password" style="display: block; font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.5rem;">Password</label>
-                <div style="position: relative;">
-                  <input type="password" id="password" name="password" placeholder="Create a strong password" required 
-                         style="width: 100%; padding: 0.875rem 3rem 0.875rem 3rem; border: 2px solid var(--border); border-radius: 12px; font-size: 1rem; transition: all 0.3s ease; background: var(--background-alt);" 
-                         onfocus="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 0 0 3px rgba(99, 102, 241, 0.1)'; this.style.background='white'" 
-                         onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none'; this.style.background='var(--background-alt)'">
-                  <i class="fas fa-lock" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
-                  <button type="button" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--text-muted); cursor: pointer;">
-                    <i class="fas fa-eye"></i>
-                  </button>
-                </div>
-                <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem;">Must be at least 8 characters long</p>
-              </div>
-              
-              <!-- Confirm Password -->
-              <div style="margin-bottom: 1.5rem;">
-                <label for="confirmPassword" style="display: block; font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.5rem;">Confirm Password</label>
-                <div style="position: relative;">
-                  <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required 
-                         style="width: 100%; padding: 0.875rem 3rem 0.875rem 3rem; border: 2px solid var(--border); border-radius: 12px; font-size: 1rem; transition: all 0.3s ease; background: var(--background-alt);" 
-                         onfocus="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 0 0 3px rgba(99, 102, 241, 0.1)'; this.style.background='white'" 
-                         onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none'; this.style.background='var(--background-alt)'">
-                  <i class="fas fa-lock" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
-                  <button type="button" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--text-muted); cursor: pointer;">
-                    <i class="fas fa-eye"></i>
-                  </button>
-                </div>
-              </div>
-              
-              <!-- Terms & Newsletter -->
-              <div style="margin-bottom: 1.5rem;">
-                <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer; margin-bottom: 1rem;">
-                  <input type="checkbox" name="terms" required style="width: 1rem; height: 1rem; accent-color: var(--primary); margin-top: 2px; flex-shrink: 0;">
-                  <span style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">
-                    I agree to the <a href="#" style="color: var(--primary); text-decoration: none; font-weight: 500;" onmouseover="this.style.color='var(--primary-dark)'" onmouseout="this.style.color='var(--primary)'">Terms of Service</a> and <a href="#" style="color: var(--primary); text-decoration: none; font-weight: 500;" onmouseover="this.style.color='var(--primary-dark)'" onmouseout="this.style.color='var(--primary)'">Privacy Policy</a>
-                  </span>
-                </label>
-                <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer;">
-                  <input type="checkbox" name="newsletter" style="width: 1rem; height: 1rem; accent-color: var(--primary); margin-top: 2px; flex-shrink: 0;">
-                  <span style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">
-                    I want to receive updates about new courses and learning tips
-                  </span>
-                </label>
-              </div>
-              
-              <button type="submit" style="width: 100%; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; border: none; padding: 1rem; border-radius: 12px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(99, 102, 241, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(99, 102, 241, 0.3)'">
-                <i class="fas fa-user-plus" style="margin-right: 0.5rem;"></i>
-                Create Account
+            <h1 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Join EduLMS</h1>
+            <p style="color: var(--text-muted); font-size: 0.875rem;">Start your learning journey today</p>
+          </div>
+          
+          <!-- Social Registration -->
+          <div style="margin-bottom: 1.5rem;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <button style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 8px; background: white; color: var(--text-secondary); font-weight: 500; transition: all 0.2s ease; cursor: pointer; font-size: 0.875rem;" onmouseover="this.style.borderColor='#4285f4'; this.style.boxShadow='0 2px 8px rgba(66, 133, 244, 0.15)'" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='none'">
+                <i class="fab fa-google" style="color: #4285f4; font-size: 1rem;"></i>
+                <span>Google</span>
               </button>
-            </form>
-            
-            <div style="text-align: center; margin-top: 2rem;">
-              <p style="color: var(--text-muted);">Already have an account? <a href="login.html" style="color: var(--primary); text-decoration: none; font-weight: 500;" onmouseover="this.style.color='var(--primary-dark)'" onmouseout="this.style.color='var(--primary)'">Sign in now</a></p>
+              <button style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 8px; background: white; color: var(--text-secondary); font-weight: 500; transition: all 0.2s ease; cursor: pointer; font-size: 0.875rem;" onmouseover="this.style.borderColor='#1877f2'; this.style.boxShadow='0 2px 8px rgba(24, 119, 242, 0.15)'" onmouseout="this.style.borderColor='#e5e7eb'; this.style.boxShadow='none'">
+                <i class="fab fa-facebook" style="color: #1877f2; font-size: 1rem;"></i>
+                <span>Facebook</span>
+              </button>
             </div>
+          </div>
+          
+          <!-- Divider -->
+          <div style="position: relative; text-align: center; margin: 1.5rem 0;">
+            <div style="height: 1px; background: #e5e7eb;"></div>
+            <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 0 0.75rem; color: var(--text-muted); font-size: 0.75rem;">or continue with email</span>
+          </div>
+          
+          <!-- Registration Form -->
+          <form>
+            <!-- Name Fields -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1rem;">
+              <div>
+                <label for="firstName" style="display: block; font-size: 0.75rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.375rem;">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First name" required 
+                       style="width: 100%; padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 0.875rem; transition: all 0.2s ease; background: white;" 
+                       onfocus="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 0 0 3px rgba(99, 102, 241, 0.1)'" 
+                       onblur="this.style.borderColor='#e5e7eb'; this.style.boxShadow='none'">
+              </div>
+              <div>
+                <label for="lastName" style="display: block; font-size: 0.75rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.375rem;">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last name" required 
+                       style="width: 100%; padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 0.875rem; transition: all 0.2s ease; background: white;" 
+                       onfocus="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 0 0 3px rgba(99, 102, 241, 0.1)'" 
+                       onblur="this.style.borderColor='#e5e7eb'; this.style.boxShadow='none'">
+              </div>
+            </div>
+            
+            <!-- Email -->
+            <div style="margin-bottom: 1rem;">
+              <label for="email" style="display: block; font-size: 0.75rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.375rem;">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required 
+                     style="width: 100%; padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 0.875rem; transition: all 0.2s ease; background: white;" 
+                     onfocus="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 0 0 3px rgba(99, 102, 241, 0.1)'" 
+                     onblur="this.style.borderColor='#e5e7eb'; this.style.boxShadow='none'">
+            </div>
+            
+            <!-- Password -->
+            <div style="margin-bottom: 1rem;">
+              <label for="password" style="display: block; font-size: 0.75rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.375rem;">Password</label>
+              <div style="position: relative;">
+                <input type="password" id="password" name="password" placeholder="Create a password" required 
+                       style="width: 100%; padding: 0.75rem 2.5rem 0.75rem 0.75rem; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 0.875rem; transition: all 0.2s ease; background: white;" 
+                       onfocus="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 0 0 3px rgba(99, 102, 241, 0.1)'" 
+                       onblur="this.style.borderColor='#e5e7eb'; this.style.boxShadow='none'">
+                <button type="button" style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: #9ca3af; cursor: pointer; transition: color 0.2s ease;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='#9ca3af'">
+                  <i class="fas fa-eye" style="font-size: 0.875rem;"></i>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Confirm Password -->
+            <div style="margin-bottom: 1rem;">
+              <label for="confirmPassword" style="display: block; font-size: 0.75rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.375rem;">Confirm Password</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required 
+                     style="width: 100%; padding: 0.75rem; border: 1px solid #e5e7eb; border-radius: 6px; font-size: 0.875rem; transition: all 0.2s ease; background: white;" 
+                     onfocus="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 0 0 3px rgba(99, 102, 241, 0.1)'" 
+                     onblur="this.style.borderColor='#e5e7eb'; this.style.boxShadow='none'">
+            </div>
+            
+            <!-- Terms -->
+            <div style="margin-bottom: 1.5rem;">
+              <label style="display: flex; align-items: flex-start; gap: 0.5rem; cursor: pointer;">
+                <input type="checkbox" name="terms" required style="width: 1rem; height: 1rem; accent-color: var(--primary); margin-top: 1px; flex-shrink: 0;">
+                <span style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.4;">
+                  I agree to the <a href="#" style="color: var(--primary); text-decoration: none; font-weight: 500; transition: opacity 0.2s ease;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">Terms of Service</a> and <a href="#" style="color: var(--primary); text-decoration: none; font-weight: 500; transition: opacity 0.2s ease;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">Privacy Policy</a>
+                </span>
+              </label>
+            </div>
+            
+            <button type="submit" style="width: 100%; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; border: none; padding: 0.875rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);" onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 20px rgba(99, 102, 241, 0.35)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(99, 102, 241, 0.25)'">
+              Create Account
+            </button>
+          </form>
+          
+          <div style="text-align: center; margin-top: 1.5rem;">
+            <p style="color: var(--text-muted); font-size: 0.75rem;">Already have an account? <a href="login.html" style="color: var(--primary); text-decoration: none; font-weight: 500; transition: opacity 0.2s ease;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">Sign in now</a></p>
           </div>
         </div>
 
-        <!-- Right Side - Benefits Panel -->
-        <div style="color: white; text-align: center;">
-          <!-- Hero Icon -->
-          <div style="margin-bottom: 3rem;">
-            <div style="width: 200px; height: 200px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
-              <i class="fas fa-rocket" style="font-size: 4rem; color: white;"></i>
+        <!-- Right Side - Welcome Panel -->
+        <div style="text-align: center; padding: 2rem;">
+          <div style="margin-bottom: 2rem;">
+            <div style="width: 120px; height: 120px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);">
+              <i class="fas fa-graduation-cap" style="color: white; font-size: 3rem;"></i>
             </div>
           </div>
           
-          <div>
-            <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.2;">Transform Your Career</h2>
-            <p style="font-size: 1.25rem; opacity: 0.9; margin-bottom: 3rem; line-height: 1.6;">Join thousands of learners who have already transformed their careers with our expert-led courses.</p>
-            
-            <!-- Benefits List -->
-            <div style="text-align: left; max-width: 400px; margin: 0 auto 3rem;">
-              <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
-                <div style="width: 40px; height: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                  <i class="fas fa-book" style="color: white;"></i>
-                </div>
-                <div>
-                  <h4 style="font-weight: 600; margin-bottom: 0.5rem;">500+ Expert Courses</h4>
-                  <p style="opacity: 0.8; font-size: 0.875rem; line-height: 1.5;">Access courses in programming, design, business, and more from industry experts.</p>
-                </div>
+          <h2 style="font-size: 2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1rem; line-height: 1.2;">Welcome to EduLMS</h2>
+          <p style="font-size: 1rem; color: var(--text-muted); margin-bottom: 2rem; line-height: 1.6;">Join thousands of learners transforming their careers with expert-led courses.</p>
+          
+          <!-- Features -->
+          <div style="text-align: left; max-width: 360px; margin: 0 auto 2rem;">
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+              <div style="width: 32px; height: 32px; background: var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-check" style="color: white; font-size: 0.875rem;"></i>
               </div>
-              
-              <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
-                <div style="width: 40px; height: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                  <i class="fas fa-clock" style="color: white;"></i>
-                </div>
-                <div>
-                  <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Learn at Your Pace</h4>
-                  <p style="opacity: 0.8; font-size: 0.875rem; line-height: 1.5;">24/7 access to course materials with lifetime access and mobile app support.</p>
-                </div>
-              </div>
-              
-              <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
-                <div style="width: 40px; height: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                  <i class="fas fa-certificate" style="color: white;"></i>
-                </div>
-                <div>
-                  <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Verified Certificates</h4>
-                  <p style="opacity: 0.8; font-size: 0.875rem; line-height: 1.5;">Earn completion certificates that boost your resume and LinkedIn profile.</p>
-                </div>
-              </div>
-              
-              <div style="display: flex; align-items: flex-start; gap: 1rem;">
-                <div style="width: 40px; height: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                  <i class="fas fa-users" style="color: white;"></i>
-                </div>
-                <div>
-                  <h4 style="font-weight: 600; margin-bottom: 0.5rem;">Community Support</h4>
-                  <p style="opacity: 0.8; font-size: 0.875rem; line-height: 1.5;">Connect with fellow learners and get help from our active community.</p>
-                </div>
-              </div>
+              <span style="color: var(--text-secondary); font-size: 0.875rem; font-weight: 500;">500+ Expert-led courses</span>
             </div>
             
-            <!-- Free Trial Banner -->
-            <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
-              <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">🎉 Start Your Free Trial</h3>
-              <p style="opacity: 0.9; font-size: 1rem; margin-bottom: 1.5rem;">Get 7 days of unlimited access to all courses. No credit card required.</p>
-              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; text-align: center;">
-                <div>
-                  <div style="font-size: 1.5rem; font-weight: 700;">50K+</div>
-                  <div style="opacity: 0.8; font-size: 0.75rem;">Students</div>
-                </div>
-                <div>
-                  <div style="font-size: 1.5rem; font-weight: 700;">500+</div>
-                  <div style="opacity: 0.8; font-size: 0.75rem;">Courses</div>
-                </div>
-                <div>
-                  <div style="font-size: 1.5rem; font-weight: 700;">98%</div>
-                  <div style="opacity: 0.8; font-size: 0.75rem;">Success</div>
-                </div>
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+              <div style="width: 32px; height: 32px; background: var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-check" style="color: white; font-size: 0.875rem;"></i>
               </div>
+              <span style="color: var(--text-secondary); font-size: 0.875rem; font-weight: 500;">Lifetime access to content</span>
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+              <div style="width: 32px; height: 32px; background: var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-check" style="color: white; font-size: 0.875rem;"></i>
+              </div>
+              <span style="color: var(--text-secondary); font-size: 0.875rem; font-weight: 500;">Verified certificates</span>
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <div style="width: 32px; height: 32px; background: var(--primary); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-check" style="color: white; font-size: 0.875rem;"></i>
+              </div>
+              <span style="color: var(--text-secondary); font-size: 0.875rem; font-weight: 500;">Community support</span>
+            </div>
+          </div>
+          
+          <!-- Stats -->
+          <div style="display: flex; justify-content: center; gap: 2rem;">
+            <div style="text-align: center;">
+              <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem;">50K+</div>
+              <div style="color: var(--text-muted); font-size: 0.75rem;">Students</div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem;">500+</div>
+              <div style="color: var(--text-muted); font-size: 0.75rem;">Courses</div>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem;">98%</div>
+              <div style="color: var(--text-muted); font-size: 0.75rem;">Success</div>
             </div>
           </div>
         </div>
@@ -264,17 +214,22 @@
         }
         
         .container > div > div:first-child {
-          padding: 2rem !important;
-          margin: 1rem !important;
-          max-height: none !important;
+          padding: 1.5rem !important;
         }
         
         .container > div > div:last-child {
           display: none !important;
         }
         
-        .container > div > div:first-child > div > form > div:first-child {
+        .container > div > div:first-child > form > div:first-child {
           grid-template-columns: 1fr !important;
+          gap: 0.75rem !important;
+        }
+      }
+      
+      @media (max-width: 640px) {
+        .container {
+          padding: 0 0.75rem !important;
         }
       }
     </style>

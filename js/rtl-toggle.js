@@ -21,12 +21,24 @@ document.addEventListener('DOMContentLoaded', () => {
     updateRtlButtonText(curr);
   };
 
+  const toggleRtlAndCloseMobile = () => {
+    const curr = document.documentElement.getAttribute('dir') === 'ltr' ? 'rtl' : 'ltr';
+    document.documentElement.setAttribute('dir', curr);
+    localStorage.setItem('dir', curr);
+    updateRtlButtonText(curr);
+    
+    // Close mobile navigation if it's open
+    if (mobileNav && mobileNav.classList.contains('active')) {
+      closeMobileNav();
+    }
+  };
+
   if (rtlBtn) {
     rtlBtn.addEventListener('click', toggleRtl);
   }
 
   if (rtlBtnMobile) {
-    rtlBtnMobile.addEventListener('click', toggleRtl);
+    rtlBtnMobile.addEventListener('click', toggleRtlAndCloseMobile);
   }
 
   // Hamburger Menu functionality
@@ -34,6 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileNav = document.querySelector('.mobile-nav');
   const mobileNavClose = document.querySelector('.mobile-nav-close');
   const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+  // Function to close mobile navigation (declared early for RTL toggle access)
+  function closeMobileNav() {
+    if (hamburger) hamburger.classList.remove('active');
+    if (mobileNav) mobileNav.classList.remove('active');
+    document.body.style.overflow = '';
+  }
 
   if (hamburger && mobileNav) {
     hamburger.addEventListener('click', (e) => {
@@ -77,13 +96,6 @@ document.addEventListener('DOMContentLoaded', () => {
         closeMobileNav();
       }
     });
-
-    // Function to close mobile navigation
-    function closeMobileNav() {
-      hamburger.classList.remove('active');
-      mobileNav.classList.remove('active');
-      document.body.style.overflow = '';
-    }
 
     // Close mobile nav on window resize (if screen becomes larger)
     window.addEventListener('resize', () => {

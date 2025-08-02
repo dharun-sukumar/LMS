@@ -6,6 +6,39 @@
   <title>Pricing - EduLMS</title>
   <meta name="description" content="Choose the perfect learning plan for your needs. From individual courses to unlimited access, find the right pricing option for your learning journey.">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .pricing-section {
+      padding-top: calc(var(--space-16) + var(--space-16)) !important;
+      overflow: visible !important;
+    }
+    .pricing-container {
+      overflow: visible !important;
+    }
+    .pricing-grid {
+      overflow: visible !important;
+    }
+    .most-popular-badge {
+      position: absolute !important;
+      top: -40px !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%) !important;
+      color: white !important;
+      padding: var(--space-5) var(--space-12) !important;
+      border-radius: var(--radius-full) !important;
+      font-size: var(--font-size-sm) !important;
+      font-weight: 800 !important;
+      z-index: 1000 !important;
+      box-shadow: 0 12px 32px rgba(99, 102, 241, 0.5) !important;
+      letter-spacing: 0.1em !important;
+      text-transform: uppercase !important;
+      white-space: nowrap !important;
+      border: 2px solid rgba(255, 255, 255, 0.2) !important;
+      min-width: max-content !important;
+      display: block !important;
+      visibility: visible !important;
+    }
+  </style>
   <script src="js/rtl-toggle.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -23,6 +56,13 @@
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="pricing.html" class="active">Pricing</a></li>
+            <li class="nav-dropdown">
+              <a href="#">Dashboards</a>
+              <div class="dropdown-content">
+                <a href="admin-dashboard.html">Admin Dashboard</a>
+                <a href="user-dashboard.html">User Dashboard</a>
+              </div>
+            </li>
           </ul>
         </nav>
         <div class="header-actions">
@@ -30,12 +70,43 @@
           <a href="register.html" class="btn btn-primary">Sign Up</a>
           <button id="rtl-toggle">Switch to RTL</button>
         </div>
+        <!-- Hamburger Menu -->
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
 
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <div class="mobile-nav-content">
+      <div class="mobile-nav-header">
+        <a href="index.html" class="logo">EduLMS</a>
+        <button class="mobile-nav-close">&times;</button>
+      </div>
+      <ul>
+        <li><a href="index.html">Home 1</a></li>
+        <li><a href="index2.html">Home 2</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="pricing.html" class="active">Pricing</a></li>
+        <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+        <li><a href="user-dashboard.html">User Dashboard</a></li>
+      </ul>
+      <div class="mobile-nav-actions">
+        <a href="login.html" class="btn btn-secondary">Login</a>
+        <a href="register.html" class="btn btn-primary">Sign Up</a>
+        <button id="rtl-toggle-mobile">Switch to RTL</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Page Header -->
-  <section class="hero">
+  <section class="hero hero-pricing">
     <div class="container">
       <div class="hero-content">
         <h1>Choose Your Learning Plan</h1>
@@ -45,11 +116,11 @@
   </section>
 
   <!-- Pricing Toggle -->
-  <section class="section" style="padding: var(--space-8) 0;">
+  <section class="section">
     <div class="container">
       <div class="text-center">
         <div class="flex items-center justify-center gap-4">
-          <span class="text-lg font-semibold">Monthly</span>
+          <span class="text-lg font-semibold" style="border: 2px solid var(--primary); padding: var(--space-2) var(--space-4); border-radius: var(--radius); background: var(--primary-50); color: var(--primary);">Monthly</span>
           <button class="btn btn-primary">
             <i class="fas fa-calendar-alt"></i>
             Yearly
@@ -61,9 +132,9 @@
   </section>
 
   <!-- Pricing Plans -->
-  <section class="section">
-    <div class="container">
-      <div class="grid grid-3">
+  <section class="section pricing-section">
+    <div class="container pricing-container">
+      <div class="grid grid-3 pricing-grid">
         <!-- Basic Plan -->
         <div class="card" style="position: relative;">
           <div class="text-center">
@@ -113,8 +184,8 @@
         </div>
 
         <!-- Pro Plan -->
-        <div class="card" style="position: relative; border: 2px solid var(--primary); transform: scale(1.05); z-index: 10; margin-top: var(--space-8);">
-          <div style="position: absolute; top: -24px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: var(--space-3) var(--space-8); border-radius: var(--radius-full); font-size: var(--font-size-xs); font-weight: 800; z-index: 1000; box-shadow: 0 8px 24px rgba(99, 102, 241, 0.4); letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap;">
+        <div class="card" style="position: relative; border: 2px solid var(--primary); transform: scale(1.05); z-index: 10; margin-top: var(--space-20); overflow: visible;">
+          <div class="most-popular-badge">
             ⭐ MOST POPULAR ⭐
           </div>
           

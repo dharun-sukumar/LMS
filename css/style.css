@@ -529,9 +529,205 @@ nav a.active {
   opacity: 0.3;
 }
 
+/* ===== Courses Page Hero ===== */
+.hero-courses {
+  background: 
+    linear-gradient(
+      135deg, 
+      rgba(0, 0, 0, 0.8) 0%, 
+      rgba(0, 0, 0, 0.6) 50%, 
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'),
+    url('assets/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.hero-courses::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+  opacity: 0.7;
+}
+
+.hero-courses::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+  z-index: 0;
+}
+
+/* ===== About Page Hero ===== */
+.hero-about {
+  background: 
+    linear-gradient(
+      135deg, 
+      rgba(0, 0, 0, 0.8) 0%, 
+      rgba(0, 0, 0, 0.6) 50%, 
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80'),
+    url('assets/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.hero-about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+  opacity: 0.7;
+}
+
+.hero-about::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+  z-index: 0;
+}
+
+/* ===== Contact Page Hero ===== */
+.hero-contact {
+  background: 
+    linear-gradient(
+      135deg, 
+      rgba(0, 0, 0, 0.8) 0%, 
+      rgba(0, 0, 0, 0.6) 50%, 
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'),
+    url('assets/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.hero-contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+  opacity: 0.7;
+}
+
+.hero-contact::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+  z-index: 0;
+}
+
+/* ===== Pricing Page Hero ===== */
+.hero-pricing {
+  background: 
+    linear-gradient(
+      135deg, 
+      rgba(0, 0, 0, 0.8) 0%, 
+      rgba(0, 0, 0, 0.6) 50%, 
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url('https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'),
+    url('assets/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.hero-pricing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    );
+  opacity: 0.7;
+}
+
+.hero-pricing::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    );
+  z-index: 0;
+}
+
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
   max-width: 800px;
   margin-inline: auto;
@@ -551,6 +747,31 @@ nav a.active {
   color: var(--text-secondary);
   margin-block-end: var(--space-8);
   line-height: var(--line-height-relaxed);
+}
+
+/* Courses page specific hero content styling */
+.hero-courses .hero-content,
+.hero-about .hero-content,
+.hero-contact .hero-content,
+.hero-pricing .hero-content {
+  background: none;
+  box-shadow: none;
+}
+
+.hero-courses h1,
+.hero-about h1,
+.hero-contact h1,
+.hero-pricing h1 {
+  color: var(--text-inverse);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-courses p,
+.hero-about p,
+.hero-contact p,
+.hero-pricing p {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .hero-actions {
@@ -586,6 +807,23 @@ nav a.active {
   color: var(--text-muted);
   font-weight: 500;
   margin-block-start: var(--space-1);
+}
+
+/* Courses page specific hero stats styling */
+.hero-courses .hero-stat-number,
+.hero-about .hero-stat-number,
+.hero-contact .hero-stat-number,
+.hero-pricing .hero-stat-number {
+  color: var(--text-inverse);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-courses .hero-stat-label,
+.hero-about .hero-stat-label,
+.hero-contact .hero-stat-label,
+.hero-pricing .hero-stat-label {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* ===== Section System ===== */
@@ -1247,6 +1485,24 @@ html[dir="rtl"] .mobile-nav-content {
   
   .hero {
     min-height: 100vh;
+  }
+  
+  .hero-courses,
+  .hero-about,
+  .hero-contact,
+  .hero-pricing {
+    background-attachment: scroll; /* Fixed attachment can cause issues on mobile */
+  }
+  
+  .hero-content {
+    padding: var(--space-6);
+  }
+  
+  .hero-courses .hero-content,
+  .hero-about .hero-content,
+  .hero-contact .hero-content,
+  .hero-pricing .hero-content {
+    margin: var(--space-4);
   }
   
   .hero h1 {
