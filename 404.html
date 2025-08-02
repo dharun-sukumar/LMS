@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | EduLMS</title>
+  <meta name="description" content="The page you're looking for couldn't be found. Return to EduLMS and continue your learning journey.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/rtl-toggle.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">EduLMS</a>
+        
+        <!-- Desktop Navigation -->
+        <nav>
+          <ul>
+            <li class="nav-dropdown">
+              <a href="index.html">Home</a>
+              <div class="dropdown-content">
+                <a href="index.html">Home 1</a>
+                <a href="index2.html">Home 2</a>
+              </div>
+            </li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </nav>
+        
+        <div class="header-actions">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="register.html" class="btn btn-primary">Sign Up</a>
+          <button id="rtl-toggle">Switch to RTL</button>
+        </div>
+        
+        <!-- Hamburger Menu -->
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <div class="mobile-nav-content">
+      <div class="mobile-nav-header">
+        <a href="index.html" class="logo">EduLMS</a>
+        <button class="mobile-nav-close">&times;</button>
+      </div>
+      <ul>
+        <li><a href="index.html">Home 1</a></li>
+        <li><a href="index2.html">Home 2</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+      <div class="mobile-nav-actions">
+        <a href="login.html" class="btn btn-secondary">Login</a>
+        <a href="register.html" class="btn btn-primary">Sign Up</a>
+        <button id="rtl-toggle-mobile">Switch to RTL</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 404 Error Section -->
+  <section class="section" style="min-height: 80vh; display: flex; align-items: center;">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+        
+        <!-- Left Side - Error Content -->
+        <div style="text-align: center;">
+          <!-- 404 Illustration -->
+          <div style="margin-bottom: 3rem;">
+            <div style="position: relative; display: inline-block;">
+              <!-- Large 404 Text -->
+              <div style="font-size: 8rem; font-weight: 800; color: var(--primary-100); line-height: 1; margin-bottom: 1rem;">404</div>
+              
+              <!-- Floating Icons -->
+              <div style="position: absolute; top: 20%; left: -20%; animation: float 3s ease-in-out infinite;">
+                <div style="width: 60px; height: 60px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-lg);">
+                  <i class="fas fa-search" style="color: white; font-size: 1.5rem;"></i>
+                </div>
+              </div>
+              
+              <div style="position: absolute; top: 10%; right: -10%; animation: float 3s ease-in-out infinite 1s;">
+                <div style="width: 40px; height: 40px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-md);">
+                  <i class="fas fa-question" style="color: white; font-size: 1rem;"></i>
+                </div>
+              </div>
+              
+              <div style="position: absolute; bottom: 20%; left: 10%; animation: float 3s ease-in-out infinite 2s;">
+                <div style="width: 50px; height: 50px; background: var(--success); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-md);">
+                  <i class="fas fa-home" style="color: white; font-size: 1.25rem;"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Error Message -->
+          <div style="max-width: 500px; margin: 0 auto;">
+            <h1 style="font-size: 3rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1.5rem; line-height: 1.1;">
+              Oops! Page Not Found
+            </h1>
+            <p style="font-size: 1.25rem; color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.6;">
+              The page you're looking for seems to have taken a different learning path. Don't worry, let's get you back on track!
+            </p>
+            
+            <!-- Action Buttons -->
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+              <a href="index.html" class="btn btn-primary btn-xl">
+                <i class="fas fa-home"></i>
+                Back to Home
+              </a>
+              <a href="courses.html" class="btn btn-outline btn-xl">
+                <i class="fas fa-book"></i>
+                Browse Courses
+              </a>
+            </div>
+            
+            <!-- Quick Links -->
+            <div style="margin-top: 3rem;">
+              <p style="color: var(--text-muted); margin-bottom: 1rem;">Or try these popular sections:</p>
+              <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+                <a href="about.html" style="color: var(--primary); text-decoration: none; font-weight: 500; transition: color var(--transition-fast);" onmouseover="this.style.color='var(--primary-dark)'" onmouseout="this.style.color='var(--primary)'">
+                  <i class="fas fa-info-circle" style="margin-right: 0.5rem;"></i>About Us
+                </a>
+                <a href="contact.html" style="color: var(--primary); text-decoration: none; font-weight: 500; transition: color var(--transition-fast);" onmouseover="this.style.color='var(--primary-dark)'" onmouseout="this.style.color='var(--primary)'">
+                  <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>Contact
+                </a>
+                <a href="pricing.html" style="color: var(--primary); text-decoration: none; font-weight: 500; transition: color var(--transition-fast);" onmouseover="this.style.color='var(--primary-dark)'" onmouseout="this.style.color='var(--primary)'">
+                  <i class="fas fa-tags" style="margin-right: 0.5rem;"></i>Pricing
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Side - Help Card -->
+        <div>
+          <div class="card" style="padding: 3rem; text-align: center; background: linear-gradient(135deg, var(--primary-50), var(--primary-100)); border: none;">
+            <div style="width: 100px; height: 100px; background: var(--primary); border-radius: 50%; margin: 0 auto 2rem; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-lg);">
+              <i class="fas fa-life-ring" style="color: white; font-size: 2.5rem;"></i>
+            </div>
+            
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1rem;">Need Help?</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.6;">
+              Our support team is here to help you find what you're looking for or answer any questions you might have.
+            </p>
+            
+            <div style="margin-bottom: 2rem;">
+              <a href="contact.html" class="btn btn-primary" style="margin-bottom: 1rem; width: 100%;">
+                <i class="fas fa-headset"></i>
+                Contact Support
+              </a>
+              <a href="about.html" class="btn btn-secondary" style="width: 100%;">
+                <i class="fas fa-question-circle"></i>
+                FAQ & Help Center
+              </a>
+            </div>
+            
+            <!-- Quick Stats -->
+            <div style="border-top: 1px solid var(--border); padding-top: 1.5rem; margin-top: 1.5rem;">
+              <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1rem;">Join our community:</p>
+              <div style="display: flex; justify-content: space-around; text-align: center;">
+                <div>
+                  <div style="font-size: 1.25rem; font-weight: 700; color: var(--primary);">50K+</div>
+                  <div style="color: var(--text-muted); font-size: 0.75rem;">Students</div>
+                </div>
+                <div>
+                  <div style="font-size: 1.25rem; font-weight: 700; color: var(--primary);">500+</div>
+                  <div style="color: var(--text-muted); font-size: 0.75rem;">Courses</div>
+                </div>
+                <div>
+                  <div style="font-size: 1.25rem; font-weight: 700; color: var(--primary);">24/7</div>
+                  <div style="color: var(--text-muted); font-size: 0.75rem;">Support</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>EduLMS</h3>
+          <p>Transform your future with expert-led online learning. Join millions of learners worldwide and master new skills with our comprehensive courses.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="courses.html">All Courses</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+        <div class="footer-section">
+          <h3>Categories</h3>
+          <a href="courses.html">Programming</a>
+          <a href="courses.html">Data Science</a>
+          <a href="courses.html">Digital Marketing</a>
+          <a href="courses.html">Design</a>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <a href="contact.html">Help Center</a>
+          <a href="contact.html">Contact Support</a>
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EduLMS. All rights reserved. | Empowering learners worldwide</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Animation CSS -->
+  <style>
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+    
+    @media (max-width: 768px) {
+      .grid.grid-2 {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+      }
+      
+      div[style*="font-size: 8rem"] {
+        font-size: 4rem !important;
+      }
+      
+      h1[style*="font-size: 3rem"] {
+        font-size: 2rem !important;
+      }
+      
+      div[style*="position: absolute"] {
+        display: none !important;
+      }
+    }
+  </style>
+</body>
+</html>

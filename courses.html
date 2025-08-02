@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - EduLMS</title>
+  <meta name="description" content="Browse our comprehensive collection of online courses in programming, data science, design, marketing, and more.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/rtl-toggle.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">EduLMS</a>
+        
+        <!-- Desktop Navigation -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html" class="active">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </nav>
+        
+        <div class="header-actions">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="register.html" class="btn btn-primary">Sign Up</a>
+          <button id="rtl-toggle">Switch to RTL</button>
+        </div>
+        
+        <!-- Hamburger Menu -->
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <div class="mobile-nav-content">
+      <div class="mobile-nav-header">
+        <a href="index.html" class="logo">EduLMS</a>
+        <button class="mobile-nav-close">&times;</button>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html" class="active">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+      <div class="mobile-nav-actions">
+        <a href="login.html" class="btn btn-secondary">Login</a>
+        <a href="register.html" class="btn btn-primary">Sign Up</a>
+        <button id="rtl-toggle-mobile">Switch to RTL</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Explore Our Courses</h1>
+        <p>Discover 500+ expert-led courses designed to help you master new skills and advance your career.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Filters -->
+  <section class="section" style="padding: var(--space-8) 0;">
+    <div class="container">
+      <div class="flex gap-4" style="justify-content: center; flex-wrap: wrap;">
+        <button class="btn btn-primary">
+          <i class="fas fa-th-large"></i>
+          All Courses
+        </button>
+        <button class="btn btn-secondary">
+          <i class="fas fa-code"></i>
+          Programming
+        </button>
+        <button class="btn btn-secondary">
+          <i class="fas fa-chart-line"></i>
+          Data Science
+        </button>
+        <button class="btn btn-secondary">
+          <i class="fas fa-palette"></i>
+          Design
+        </button>
+        <button class="btn btn-secondary">
+          <i class="fas fa-bullhorn"></i>
+          Marketing
+        </button>
+        <button class="btn btn-secondary">
+          <i class="fas fa-briefcase"></i>
+          Business
+        </button>
+        <button class="btn btn-secondary">
+          <i class="fas fa-user-graduate"></i>
+          Personal Development
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3">
+        <!-- Programming Courses -->
+        <div class="course-card">
+          <img src="https://imgs.search.brave.com/0TXhfEKzToRoshiLomt7Aly3d7AMo_iin9HGO1IOUlc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTEv/MjYxLzU3Ny9zbWFs/bC9wZXJzb24tY29k/aW5nLW9uLWEtbGFw/dG9wLXdpdGgtdmli/cmFudC1wcm9ncmFt/bWluZy1jb2RlLW9u/LXRoZS1zY3JlZW4t/cGhvdG8uanBlZw" alt="Python Programming" class="course-image">
+          <div class="course-content">
+            <div class="course-category">Programming</div>
+            <h3 class="course-title">Python for Beginners</h3>
+            <p class="course-description">Learn Python programming from scratch. Master variables, loops, functions, and object-oriented programming.</p>
+            <div class="course-meta">
+              <div class="course-rating">
+                <i class="fas fa-star"></i>
+                <span>4.9 (3.2k reviews)</span>
+              </div>
+              <div class="course-price">$49.99</div>
+            </div>
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Enroll Now
+            </a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="https://imgs.search.brave.com/0TXhfEKzToRoshiLomt7Aly3d7AMo_iin9HGO1IOUlc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTEv/MjYxLzU3Ny9zbWFs/bC9wZXJzb24tY29k/aW5nLW9uLWEtbGFw/dG9wLXdpdGgtdmli/cmFudC1wcm9ncmFt/bWluZy1jb2RlLW9u/LXRoZS1zY3JlZW4t/cGhvdG8uanBlZw" alt="JavaScript ES6" class="course-image">
+          <div class="course-content">
+            <div class="course-category">Programming</div>
+            <h3 class="course-title">Modern JavaScript (ES6+)</h3>
+            <p class="course-description">Master modern JavaScript features including ES6+ syntax, async/await, and functional programming.</p>
+            <div class="course-meta">
+              <div class="course-rating">
+                <i class="fas fa-star"></i>
+                <span>4.8 (2.8k reviews)</span>
+              </div>
+              <div class="course-price">$69.99</div>
+            </div>
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Enroll Now
+            </a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="https://imgs.search.brave.com/0TXhfEKzToRoshiLomt7Aly3d7AMo_iin9HGO1IOUlc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTEv/MjYxLzU3Ny9zbWFs/bC9wZXJzb24tY29k/aW5nLW9uLWEtbGFw/dG9wLXdpdGgtdmli/cmFudC1wcm9ncmFt/bWluZy1jb2RlLW9u/LXRoZS1zY3JlZW4t/cGhvdG8uanBlZw" alt="React Development" class="course-image">
+          <div class="course-content">
+            <div class="course-category">Programming</div>
+            <h3 class="course-title">React.js Complete Guide</h3>
+            <p class="course-description">Build modern web applications with React. Learn hooks, context, routing, and state management.</p>
+            <div class="course-meta">
+              <div class="course-rating">
+                <i class="fas fa-star"></i>
+                <span>4.7 (2.5k reviews)</span>
+              </div>
+              <div class="course-price">$89.99</div>
+            </div>
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Enroll Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Data Science Courses -->
+        <div class="course-card">
+          <img src="https://imgs.search.brave.com/0TXhfEKzToRoshiLomt7Aly3d7AMo_iin9HGO1IOUlc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTEv/MjYxLzU3Ny9zbWFs/bC9wZXJzb24tY29k/aW5nLW9uLWEtbGFw/dG9wLXdpdGgtdmli/cmFudC1wcm9ncmFt/bWluZy1jb2RlLW9u/LXRoZS1zY3JlZW4t/cGhvdG8uanBlZw" alt="Machine Learning" class="course-image">
+          <div class="course-content">
+            <div class="course-category">Data Science</div>
+            <h3 class="course-title">Machine Learning Fundamentals</h3>
+            <p class="course-description">Learn supervised and unsupervised learning algorithms. Build and deploy ML models.</p>
+            <div class="course-meta">
+              <div class="course-rating">
+                <i class="fas fa-star"></i>
+                <span>4.9 (1.9k reviews)</span>
+              </div>
+              <div class="course-price">$129.99</div>
+            </div>
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Enroll Now
+            </a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="https://imgs.search.brave.com/0TXhfEKzToRoshiLomt7Aly3d7AMo_iin9HGO1IOUlc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTEv/MjYxLzU3Ny9zbWFs/bC9wZXJzb24tY29k/aW5nLW9uLWEtbGFw/dG9wLXdpdGgtdmli/cmFudC1wcm9ncmFt/bWluZy1jb2RlLW9u/LXRoZS1zY3JlZW4t/cGhvdG8uanBlZw" alt="Data Analysis" class="course-image">
+          <div class="course-content">
+            <div class="course-category">Data Science</div>
+            <h3 class="course-title">Data Analysis with Python</h3>
+            <p class="course-description">Master pandas, numpy, and matplotlib for data analysis and visualization.</p>
+            <div class="course-meta">
+              <div class="course-rating">
+                <i class="fas fa-star"></i>
+                <span>4.8 (2.1k reviews)</span>
+              </div>
+              <div class="course-price">$79.99</div>
+            </div>
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Enroll Now
+            </a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="https://imgs.search.brave.com/0TXhfEKzToRoshiLomt7Aly3d7AMo_iin9HGO1IOUlc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTEv/MjYxLzU3Ny9zbWFs/bC9wZXJzb24tY29k/aW5nLW9uLWEtbGFw/dG9wLXdpdGgtdmli/cmFudC1wcm9ncmFt/bWluZy1jb2RlLW9u/LXRoZS1zY3JlZW4t/cGhvdG8uanBlZw" alt="Deep Learning" class="course-image">
+          <div class="course-content">
+            <div class="course-category">Data Science</div>
+            <h3 class="course-title">Deep Learning with TensorFlow</h3>
+            <p class="course-description">Build neural networks and deep learning models using TensorFlow and Keras.</p>
+            <div class="course-meta">
+              <div class="course-rating">
+                <i class="fas fa-star"></i>
+                <span>4.6 (1.7k reviews)</span>
+              </div>
+              <div class="course-price">$149.99</div>
+            </div>
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Enroll Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Design Courses -->
+        <div class="course-card">
+          <img src="https://imgs.search.brave.com/0TXhfEKzToRoshiLomt7Aly3d7AMo_iin9HGO1IOUlc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTEv/MjYxLzU3Ny9zbWFs/bC9wZXJzb24tY29k/aW5nLW9uLWEtbGFw/dG9wLXdpdGgtdmli/cmFudC1wcm9ncmFt/bWluZy1jb2RlLW9u/LXRoZS1zY3JlZW4t/cGhvdG8uanBlZw" alt="UI/UX Design" class="course-image">
+          <div class="course-content">
+            <div class="course-category">Design</div>
+            <h3 class="course-title">UI/UX Design Masterclass</h3>
+            <p class="course-description">Learn user interface and user experience design principles. Create beautiful, functional designs.</p>
+            <div class="course-meta">
+              <div class="course-rating">
+                <i class="fas fa-star"></i>
+                <span>4.8 (2.3k reviews)</span>
+              </div>
+              <div class="course-price">$99.99</div>
+            </div>
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Enroll Now
+            </a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="https://imgs.search.brave.com/0TXhfEKzToRoshiLomt7Aly3d7AMo_iin9HGO1IOUlc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTEv/MjYxLzU3Ny9zbWFs/bC9wZXJzb24tY29k/aW5nLW9uLWEtbGFw/dG9wLXdpdGgtdmli/cmFudC1wcm9ncmFt/bWluZy1jb2RlLW9u/LXRoZS1zY3JlZW4t/cGhvdG8uanBlZw" alt="Graphic Design" class="course-image">
+          <div class="course-content">
+            <div class="course-category">Design</div>
+            <h3 class="course-title">Graphic Design Fundamentals</h3>
+            <p class="course-description">Master the principles of graphic design, typography, color theory, and visual communication.</p>
+            <div class="course-meta">
+              <div class="course-rating">
+                <i class="fas fa-star"></i>
+                <span>4.7 (1.9k reviews)</span>
+              </div>
+              <div class="course-price">$79.99</div>
+            </div>
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Enroll Now
+            </a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="https://imgs.search.brave.com/0TXhfEKzToRoshiLomt7Aly3d7AMo_iin9HGO1IOUlc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTEv/MjYxLzU3Ny9zbWFs/bC9wZXJzb24tY29k/aW5nLW9uLWEtbGFw/dG9wLXdpdGgtdmli/cmFudC1wcm9ncmFt/bWluZy1jb2RlLW9u/LXRoZS1zY3JlZW4t/cGhvdG8uanBlZw" alt="Web Design" class="course-image">
+          <div class="course-content">
+            <div class="course-category">Design</div>
+            <h3 class="course-title">Web Design & Development</h3>
+            <p class="course-description">Create stunning websites with HTML, CSS, and JavaScript. Learn responsive design principles.</p>
+            <div class="course-meta">
+              <div class="course-rating">
+                <i class="fas fa-star"></i>
+                <span>4.9 (2.6k reviews)</span>
+              </div>
+              <div class="course-price">$89.99</div>
+            </div>
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Enroll Now
+            </a>
+          </div>
+        </div>
+
+        <!-- Marketing Courses -->
+        <div class="course-card">
+          <img src="https://imgs.search.brave.com/0TXhfEKzToRoshiLomt7Aly3d7AMo_iin9HGO1IOUlc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTEv/MjYxLzU3Ny9zbWFs/bC9wZXJzb24tY29k/aW5nLW9uLWEtbGFw/dG9wLXdpdGgtdmli/cmFudC1wcm9ncmFt/bWluZy1jb2RlLW9u/LXRoZS1zY3JlZW4t/cGhvdG8uanBlZw" alt="Digital Marketing" class="course-image">
+          <div class="course-content">
+            <div class="course-category">Marketing</div>
+            <h3 class="course-title">Digital Marketing Strategy</h3>
+            <p class="course-description">Learn SEO, social media marketing, content strategy, and analytics to grow your business.</p>
+            <div class="course-meta">
+              <div class="course-rating">
+                <i class="fas fa-star"></i>
+                <span>4.8 (2.4k reviews)</span>
+              </div>
+              <div class="course-price">$119.99</div>
+            </div>
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Enroll Now
+            </a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="https://imgs.search.brave.com/0TXhfEKzToRoshiLomt7Aly3d7AMo_iin9HGO1IOUlc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTEv/MjYxLzU3Ny9zbWFs/bC9wZXJzb24tY29k/aW5nLW9uLWEtbGFw/dG9wLXdpdGgtdmli/cmFudC1wcm9ncmFt/bWluZy1jb2RlLW9u/LXRoZS1zY3JlZW4t/cGhvdG8uanBlZw" alt="Project Management" class="course-image">
+          <div class="course-content">
+            <div class="course-category">Business</div>
+            <h3 class="course-title">Project Management Professional</h3>
+            <p class="course-description">Master project management methodologies and prepare for PMP certification.</p>
+            <div class="course-meta">
+              <div class="course-rating">
+                <i class="fas fa-star"></i>
+                <span>4.7 (1.4k reviews)</span>
+              </div>
+              <div class="course-price">$149.99</div>
+            </div>
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Enroll Now
+            </a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="https://imgs.search.brave.com/0TXhfEKzToRoshiLomt7Aly3d7AMo_iin9HGO1IOUlc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTEv/MjYxLzU3Ny9zbWFs/bC9wZXJzb24tY29k/aW5nLW9uLWEtbGFw/dG9wLXdpdGgtdmli/cmFudC1wcm9ncmFt/bWluZy1jb2RlLW9u/LXRoZS1zY3JlZW4t/cGhvdG8uanBlZw" alt="Leadership Skills" class="course-image">
+          <div class="course-content">
+            <div class="course-category">Business</div>
+            <h3 class="course-title">Leadership & Management</h3>
+            <p class="course-description">Develop essential leadership skills for managing teams and driving organizational success.</p>
+            <div class="course-meta">
+              <div class="course-rating">
+                <i class="fas fa-star"></i>
+                <span>4.9 (1.8k reviews)</span>
+              </div>
+              <div class="course-price">$99.99</div>
+            </div>
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Enroll Now
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load More Button -->
+      <div class="text-center mt-8">
+        <button class="btn btn-outline btn-lg">
+          <i class="fas fa-plus"></i>
+          Load More Courses
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section bg-surface">
+    <div class="container">
+      <div class="text-center">
+        <h2>Can't Find What You're Looking For?</h2>
+        <p class="section-subtitle">Contact our course advisors to get personalized recommendations based on your goals and experience level.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary btn-lg">
+            <i class="fas fa-comments"></i>
+            Get Course Advice
+          </a>
+          <a href="register.html" class="btn btn-outline btn-lg">
+            <i class="fas fa-rocket"></i>
+            Start Free Trial
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>EduLMS</h3>
+          <p>Transform your future with expert-led online learning. Join millions of learners worldwide and master new skills with our comprehensive courses.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="courses.html">All Courses</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+        <div class="footer-section">
+          <h3>Categories</h3>
+          <a href="courses.html">Programming</a>
+          <a href="courses.html">Data Science</a>
+          <a href="courses.html">Digital Marketing</a>
+          <a href="courses.html">Design</a>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <a href="contact.html">Help Center</a>
+          <a href="contact.html">Contact Support</a>
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EduLMS. All rights reserved. | Empowering learners worldwide</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

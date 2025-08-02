@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduLMS - Transform Your Learning Journey</title>
+  <meta name="description" content="Discover the best online learning platform with expert instructors, interactive courses, and flexible learning paths.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/rtl-toggle.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">EduLMS</a>
+        
+        <!-- Desktop Navigation -->
+        <nav>
+          <ul>
+            <li class="nav-dropdown">
+              <a href="index.html" class="active">Home</a>
+              <div class="dropdown-content">
+                <a href="index.html" class="active">Home 1</a>
+                <a href="index2.html">Home 2</a>
+              </div>
+            </li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </nav>
+        
+        <div class="header-actions">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="register.html" class="btn btn-primary">Sign Up</a>
+          <button id="rtl-toggle">Switch to RTL</button>
+        </div>
+        
+        <!-- Hamburger Menu -->
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <div class="mobile-nav-content">
+      <div class="mobile-nav-header">
+        <a href="index.html" class="logo">EduLMS</a>
+        <button class="mobile-nav-close">&times;</button>
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home 1</a></li>
+        <li><a href="index2.html">Home 2</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+      <div class="mobile-nav-actions">
+        <a href="login.html" class="btn btn-secondary">Login</a>
+        <a href="register.html" class="btn btn-primary">Sign Up</a>
+        <button id="rtl-toggle-mobile">Switch to RTL</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Transform Your Future with Expert-Led Learning</h1>
+        <p>Join millions of learners worldwide and master new skills with our comprehensive online courses. From coding to design, business to arts, unlock your potential with industry experts.</p>
+        <div class="hero-actions">
+          <a href="courses.html" class="btn btn-primary btn-xl">
+            <i class="fas fa-rocket"></i>
+            Explore Courses
+          </a>
+          <a href="register.html" class="btn btn-outline btn-xl">
+            <i class="fas fa-play"></i>
+            Start Learning Free
+          </a>
+        </div>
+        
+        <!-- Hero Stats -->
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number">50K+</span>
+            <span class="hero-stat-label">Active Students</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">500+</span>
+            <span class="hero-stat-label">Expert Courses</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">95%</span>
+            <span class="hero-stat-label">Success Rate</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number">24/7</span>
+            <span class="hero-stat-label">Support Available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learning Paths Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Choose Your Learning Path</h2>
+        <p class="section-subtitle">Explore our curated learning paths designed to take you from beginner to expert in your chosen field.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="learning-path-card">
+          <div class="path-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Master frontend and backend development with modern technologies like React, Node.js, and Python.</p>
+          <ul class="path-features">
+            <li>HTML, CSS, JavaScript</li>
+            <li>React & Vue.js</li>
+            <li>Node.js & Express</li>
+            <li>Database Design</li>
+          </ul>
+          <a href="courses.html" class="btn btn-primary">
+            <i class="fas fa-arrow-right"></i>
+            Start Learning
+          </a>
+        </div>
+        <div class="learning-path-card">
+          <div class="path-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Data Science</h3>
+          <p>Learn data analysis, machine learning, and AI to become a data-driven professional.</p>
+          <ul class="path-features">
+            <li>Python Programming</li>
+            <li>Statistics & Math</li>
+            <li>Machine Learning</li>
+            <li>Data Visualization</li>
+          </ul>
+          <a href="courses.html" class="btn btn-primary">
+            <i class="fas fa-arrow-right"></i>
+            Start Learning
+          </a>
+        </div>
+        <div class="learning-path-card">
+          <div class="path-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Design & UX</h3>
+          <p>Create beautiful, user-friendly designs with modern tools and design principles.</p>
+          <ul class="path-features">
+            <li>UI/UX Design</li>
+            <li>Figma & Sketch</li>
+            <li>Prototyping</li>
+            <li>User Research</li>
+          </ul>
+          <a href="courses.html" class="btn btn-primary">
+            <i class="fas fa-arrow-right"></i>
+            Start Learning
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section bg-surface">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Choose EduLMS?</h2>
+        <p class="section-subtitle">Experience the difference with our innovative learning platform designed for modern learners.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="feature-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <h3>Expert Instructors</h3>
+          <p>Learn from industry professionals and certified experts who bring real-world experience to every lesson.</p>
+        </div>
+        <div class="card">
+          <div class="feature-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Flexible Learning</h3>
+          <p>Study at your own pace with 24/7 access to course materials, video lectures, and interactive assignments.</p>
+        </div>
+        <div class="card">
+          <div class="feature-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>Certification</h3>
+          <p>Earn recognized certificates upon completion that boost your resume and career prospects.</p>
+        </div>
+        <div class="card">
+          <div class="feature-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Community Support</h3>
+          <p>Connect with fellow learners, ask questions, and share insights in our vibrant learning community.</p>
+        </div>
+        <div class="card">
+          <div class="feature-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Mobile Learning</h3>
+          <p>Access your courses anywhere, anytime with our mobile-optimized platform and offline capabilities.</p>
+        </div>
+        <div class="card">
+          <div class="feature-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Interactive Content</h3>
+          <p>Engage with hands-on projects, quizzes, and real-world scenarios that make learning fun and effective.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Courses Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Popular Courses</h2>
+        <p class="section-subtitle">Discover our most sought-after courses that are transforming careers worldwide.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="course-card">
+          <img src="https://imgs.search.brave.com/AkF-ws56bSZIdV2MRfBOiQ6GasoYyCrS131l1sFltvU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE2/OTkyOTAzOC9waG90/by9kZXZlbG9waW5n/LXByb2dyYW1tZXIt/dGVhbS1kZXZlbG9w/bWVudC13ZWJzaXRl/LWRlc2lnbi1hbmQt/Y29kaW5nLXRlY2hu/b2xvZ2llcy13b3Jr/aW5nLWluLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz1pWW42/ZXUwODRNWHJoZFc4/SkV5SjF2Y0NISWZ5/TWh2bkt5azZBa0Fn/bU1FPQ" alt="Web Development Course" class="course-image">
+          <div class="course-content">
+            <div class="course-category">Programming</div>
+            <h3 class="course-title">Complete Web Development Bootcamp</h3>
+            <p class="course-description">Master HTML, CSS, JavaScript, and modern frameworks. Build responsive websites and web applications from scratch.</p>
+            <div class="course-meta">
+              <div class="course-rating">
+                <i class="fas fa-star"></i>
+                <span>4.8 (2.1k reviews)</span>
+              </div>
+              <div class="course-price">$89.99</div>
+            </div>
+            <a href="courses.html" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div class="course-card">
+          <img src="https://imgs.search.brave.com/q0Y0zbDUsRRR_Xn0_0ErZk5Lgs1CWuKMqxGrZyQKqAs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cy4x/MjNyZi5jb20vNDUw/d20vd3JpZ2h0c3R1/ZGlvL3dyaWdodHN0/dWRpbzIzMTAvd3Jp/Z2h0c3R1ZGlvMjMx/MDAwMjA3LzIxNTY4/NjA1NC1iaWctZGF0/YS1zY2llbmNlLWFu/YWx5dGljcy1hbmFs/eXNpcy1pbmZvcm1h/dGlvbi10ZWNobm9s/b2d5LWludGVybmV0/LWNvbmNlcHQuanBn/P3Zlcj02" alt="Data Science Course" class="course-image">
+          <div class="course-content">
+            <div class="course-category">Data Science</div>
+            <h3 class="course-title">Data Science & Machine Learning</h3>
+            <p class="course-description">Learn Python, statistics, and machine learning algorithms. Analyze data and build predictive models.</p>
+            <div class="course-meta">
+              <div class="course-rating">
+                <i class="fas fa-star"></i>
+                <span>4.9 (1.8k reviews)</span>
+              </div>
+              <div class="course-price">$129.99</div>
+            </div>
+            <a href="courses.html" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div class="course-card">
+          <img src="https://imgs.search.brave.com/hlvms2hrxkFueZ1JNVLjlGPab9eoOTYkkAUK5CXJ8i8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzE5LzEwLzEy/LzM2MF9GXzIxOTEw/MTIzMl85Z1lCMTkx/Z0JVQ3hUU0U0NTVG/VWttUUIxTWlvcXRW/cC5qcGc" alt="Digital Marketing Course" class="course-image">
+          <div class="course-content">
+            <div class="course-category">Marketing</div>
+            <h3 class="course-title">Digital Marketing Masterclass</h3>
+            <p class="course-description">Master SEO, social media marketing, content strategy, and analytics to grow your business online.</p>
+            <div class="course-meta">
+              <div class="course-rating">
+                <i class="fas fa-star"></i>
+                <span>4.7 (1.5k reviews)</span>
+              </div>
+              <div class="course-price">$79.99</div>
+            </div>
+            <a href="courses.html" class="btn btn-primary">
+              <i class="fas fa-arrow-right"></i>
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <a href="courses.html" class="btn btn-outline btn-lg">
+          <i class="fas fa-th-large"></i>
+          View All Courses
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories Section -->
+  <section class="section bg-surface">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Success Stories</h2>
+        <p class="section-subtitle">Real stories from learners who transformed their careers with EduLMS.</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="success-story">
+          <div class="story-image">
+            <img src="https://imgs.search.brave.com/g_qYLXIJf0X71DbROt0r-fWZBSonjFudbhLW6JjnO00/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDYv/ODgzLzcyMi9zbWFs/bC9wcm9mZXNzaW9u/YWwtc3RvY2staW1h/Z2Utb2YtYS15b3Vu/Zy1idXNpbmVzc3dv/bWFuLXBvc2luZy1j/b25maWRlbnRseS1k/cmVzc2VkLWluLWZv/cm1hbC1hdHRpcmUt/YWdhaW5zdC1hbi1p/c29sYXRlZC13aGl0/ZS1iYWNrZHJvcC1w/ZXJmZWN0LWZvci1j/b3Jwb3JhdGUtYnJh/bmRpbmctZnJlZS1w/aG90by5qcGc" alt="Success Story" style="width: 100%; border-radius: var(--radius);">
+          </div>
+          <div class="story-content">
+            <h3>From Teacher to Tech Lead</h3>
+            <p class="story-description">Sarah transitioned from teaching to software development in just 8 months. She now leads a team of developers at a major tech company.</p>
+            <div class="story-stats">
+              <span class="stat">8 months</span>
+              <span class="stat">$120K salary</span>
+              <span class="stat">Tech Lead</span>
+            </div>
+          </div>
+        </div>
+        <div class="success-story">
+          <div class="story-image">
+            <img src="https://imgs.search.brave.com/ECUjGwFgDuZBm6g4eGkktmlwRR0ivAJwBHaTq0qdfFc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDgv/MDAyLzU3Mi9zbWFs/bC9jb25maWRlbnQt/eW91bmctd2VzdGVy/bi1ldXJvcGVhbi1i/dXNpbmVzc21hbi1w/cm9mZXNzaW9uYWwt/b2ZmaWNlLWF0dGly/ZS1zdG9ja2dyYXBo/eS1mb3ItY29ycG9y/YXRlLXVzZS1waG90/by5qcGc" alt="Success Story" style="width: 100%; border-radius: var(--radius);">
+          </div>
+          <div class="story-content">
+            <h3>Data Analyst to Data Scientist</h3>
+            <p class="story-description">Michael upgraded his skills from basic data analysis to advanced machine learning, landing a role at a leading AI company.</p>
+            <div class="story-stats">
+              <span class="stat">6 months</span>
+              <span class="stat">$95K salary</span>
+              <span class="stat">Data Scientist</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What Our Students Say</h2>
+        <p class="section-subtitle">Hear from learners who have transformed their careers with our courses.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="testimonial">
+          <div class="testimonial-content">
+            "EduLMS completely changed my career trajectory. The web development course was comprehensive and practical. I landed my dream job within 3 months of completing the course!"
+          </div>
+          <div class="testimonial-author">Sarah Johnson</div>
+          <div class="testimonial-role">Frontend Developer at TechCorp</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            "The instructors are incredibly knowledgeable and supportive. The community aspect made learning so much more engaging. Highly recommend for anyone serious about upskilling!"
+          </div>
+          <div class="testimonial-author">Michael Chen</div>
+          <div class="testimonial-role">Data Analyst at DataFlow Inc</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            "Flexible learning schedule and high-quality content. The certification helped me stand out in job interviews. Best investment I've made in my education."
+          </div>
+          <div class="testimonial-author">Emily Rodriguez</div>
+          <div class="testimonial-role">Digital Marketing Specialist</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            "From beginner to professional developer in just 6 months! The hands-on projects and real-world applications made all the difference in my learning journey."
+          </div>
+          <div class="testimonial-author">David Kim</div>
+          <div class="testimonial-role">Full-Stack Developer at StartupXYZ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learning Tools Section -->
+  <section class="section bg-surface">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Powerful Learning Tools</h2>
+        <p class="section-subtitle">Access cutting-edge tools and resources to enhance your learning experience.</p>
+      </div>
+      <div class="grid grid-4">
+        <div class="tool-card">
+          <div class="tool-icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <h4>HD Video Lectures</h4>
+          <p>Crystal clear video content with expert instructors</p>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h4>Interactive Code Editor</h4>
+          <p>Practice coding directly in your browser</p>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h4>Mobile App</h4>
+          <p>Learn on the go with our mobile app</p>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h4>Progress Tracking</h4>
+          <p>Monitor your learning progress in real-time</p>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h4>Live Q&A Sessions</h4>
+          <p>Get answers from instructors in real-time</p>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h4>Resource Library</h4>
+          <p>Access to thousands of learning resources</p>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h4>Certificates</h4>
+          <p>Earn industry-recognized certificates</p>
+        </div>
+        <div class="tool-card">
+          <div class="tool-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h4>Peer Learning</h4>
+          <p>Collaborate with fellow learners worldwide</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section bg-primary">
+    <div class="container">
+      <div class="text-center">
+        <h2 style="color: var(--text-on-primary);">Ready to Start Your Learning Journey?</h2>
+        <p style="color: rgba(255, 255, 255, 0.9); max-width: 600px; margin-inline: auto; margin-block-end: var(--space-8);">
+          Join thousands of learners who have already transformed their careers. Start your first course today and unlock your potential.
+        </p>
+        <div class="hero-actions">
+          <a href="register.html" class="btn btn-secondary btn-xl">
+            <i class="fas fa-rocket"></i>
+            Get Started Free
+          </a>
+          <a href="courses.html" class="btn btn-outline btn-xl" style="color: var(--text-on-primary); border-color: var(--text-on-primary);">
+            <i class="fas fa-th-large"></i>
+            Browse Courses
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">50K+</div>
+          <div class="stat-label">Active Students</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Expert Courses</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">95%</div>
+          <div class="stat-label">Success Rate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Support Available</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>EduLMS</h3>
+          <p>Transform your future with expert-led online learning. Join millions of learners worldwide and master new skills with our comprehensive courses.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="courses.html">All Courses</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+        <div class="footer-section">
+          <h3>Categories</h3>
+          <a href="courses.html">Programming</a>
+          <a href="courses.html">Data Science</a>
+          <a href="courses.html">Digital Marketing</a>
+          <a href="courses.html">Design</a>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <a href="contact.html">Help Center</a>
+          <a href="contact.html">Contact Support</a>
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EduLMS. All rights reserved. | Empowering learners worldwide</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

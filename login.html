@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - EduLMS</title>
+  <meta name="description" content="Sign in to your EduLMS account to continue your learning journey.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/rtl-toggle.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">EduLMS</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="register.html" class="btn btn-primary">Sign Up</a>
+          <button id="rtl-toggle">Switch to RTL</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Login Section -->
+  <section style="min-height: 100vh; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); position: relative; display: flex; align-items: center;">
+    <!-- Background Pattern -->
+    <div class="bg-pattern-dots-white" style="position: absolute; inset: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 1;">
+      <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; min-height: 80vh;">
+        
+        <!-- Left Side - Login Form -->
+        <div style="background: white; padding: 3rem; border-radius: 24px; box-shadow: var(--shadow-xl); backdrop-filter: blur(10px); position: relative; overflow: hidden;">
+          <!-- Decorative Elements -->
+          <div style="position: absolute; top: -50px; right: -50px; width: 100px; height: 100px; background: linear-gradient(45deg, var(--primary), var(--primary-dark)); border-radius: 50%; opacity: 0.1;"></div>
+          <div style="position: absolute; bottom: -30px; left: -30px; width: 60px; height: 60px; background: linear-gradient(45deg, var(--primary-dark), var(--primary)); border-radius: 50%; opacity: 0.1;"></div>
+          
+          <div style="position: relative; z-index: 2;">
+            <!-- Header -->
+            <div style="text-align: center; margin-bottom: 2.5rem;">
+              <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 20px; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);">
+                <i class="fas fa-graduation-cap" style="color: white; font-size: 2rem;"></i>
+              </div>
+              <h1 style="font-size: 2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">Welcome Back</h1>
+              <p style="color: var(--text-muted); font-size: 1rem;">Sign in to continue your learning journey</p>
+            </div>
+            
+            <!-- Social Login -->
+            <div style="margin-bottom: 2rem;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <button style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; padding: 0.875rem 1rem; border: 2px solid var(--border); border-radius: 12px; background: white; color: var(--text-secondary); font-weight: 500; transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 4px 12px rgba(99, 102, 241, 0.15)'" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
+                  <i class="fab fa-google" style="color: #ea4335; font-size: 1.25rem;"></i>
+                  <span>Google</span>
+                </button>
+                <button style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; padding: 0.875rem 1rem; border: 2px solid var(--border); border-radius: 12px; background: white; color: var(--text-secondary); font-weight: 500; transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 4px 12px rgba(99, 102, 241, 0.15)'" onmouseout="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
+                  <i class="fab fa-facebook" style="color: #1877f2; font-size: 1.25rem;"></i>
+                  <span>Facebook</span>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Divider -->
+            <div style="position: relative; text-align: center; margin: 2rem 0;">
+              <div style="height: 1px; background: var(--border);"></div>
+              <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 0 1rem; color: var(--text-muted); font-size: 0.875rem;">or continue with email</span>
+            </div>
+            
+            <!-- Login Form -->
+            <form>
+              <div style="margin-bottom: 1.5rem;">
+                <label for="email" style="display: block; font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.5rem;">Email Address</label>
+                <div style="position: relative;">
+                  <input type="email" id="email" name="email" placeholder="Enter your email address" required 
+                         style="width: 100%; padding: 0.875rem 1rem 0.875rem 3rem; border: 2px solid var(--border); border-radius: 12px; font-size: 1rem; transition: all 0.3s ease; background: var(--background-alt);" 
+                         onfocus="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 0 0 3px rgba(99, 102, 241, 0.1)'; this.style.background='white'" 
+                         onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none'; this.style.background='var(--background-alt)'">
+                  <i class="fas fa-envelope" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
+                </div>
+              </div>
+              
+              <div style="margin-bottom: 1.5rem;">
+                <label for="password" style="display: block; font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.5rem;">Password</label>
+                <div style="position: relative;">
+                  <input type="password" id="password" name="password" placeholder="Enter your password" required 
+                         style="width: 100%; padding: 0.875rem 3rem 0.875rem 3rem; border: 2px solid var(--border); border-radius: 12px; font-size: 1rem; transition: all 0.3s ease; background: var(--background-alt);" 
+                         onfocus="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 0 0 3px rgba(99, 102, 241, 0.1)'; this.style.background='white'" 
+                         onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none'; this.style.background='var(--background-alt)'">
+                  <i class="fas fa-lock" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
+                  <button type="button" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--text-muted); cursor: pointer;">
+                    <i class="fas fa-eye"></i>
+                  </button>
+                </div>
+              </div>
+              
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                  <input type="checkbox" name="remember" style="width: 1rem; height: 1rem; accent-color: var(--primary);">
+                  <span style="font-size: 0.875rem; color: var(--text-muted);">Remember me</span>
+                </label>
+                <a href="#" style="color: var(--primary); text-decoration: none; font-size: 0.875rem; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='var(--primary-dark)'" onmouseout="this.style.color='var(--primary)'">Forgot password?</a>
+              </div>
+              
+              <button type="submit" style="width: 100%; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); color: white; border: none; padding: 1rem; border-radius: 12px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(99, 102, 241, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(99, 102, 241, 0.3)'">
+                <i class="fas fa-sign-in-alt" style="margin-right: 0.5rem;"></i>
+                Sign In
+              </button>
+            </form>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+              <p style="color: var(--text-muted);">Don't have an account? <a href="register.html" style="color: var(--primary); text-decoration: none; font-weight: 500;" onmouseover="this.style.color='var(--primary-dark)'" onmouseout="this.style.color='var(--primary)'">Create one now</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side - Info Panel -->
+        <div style="color: white; text-align: center;">
+          <!-- Hero Icon -->
+          <div style="margin-bottom: 3rem;">
+            <div style="width: 200px; height: 200px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+              <i class="fas fa-book-open" style="font-size: 4rem; color: white;"></i>
+            </div>
+          </div>
+          
+          <div>
+            <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.2;">Continue Your Learning Journey</h2>
+            <p style="font-size: 1.25rem; opacity: 0.9; margin-bottom: 2rem; line-height: 1.6;">Access your personalized dashboard, track your progress, and connect with a community of learners.</p>
+            
+            <!-- Stats -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem;">
+              <div style="text-align: center;">
+                <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">500+</div>
+                <div style="opacity: 0.8; font-size: 0.875rem;">Courses</div>
+              </div>
+              <div style="text-align: center;">
+                <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">50K+</div>
+                <div style="opacity: 0.8; font-size: 0.875rem;">Students</div>
+              </div>
+              <div style="text-align: center;">
+                <div style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">98%</div>
+                <div style="opacity: 0.8; font-size: 0.875rem;">Success Rate</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Responsive Styles -->
+    <style>
+      @media (max-width: 768px) {
+        .container > div {
+          grid-template-columns: 1fr !important;
+          gap: 2rem !important;
+        }
+        
+        .container > div > div:first-child {
+          padding: 2rem !important;
+          margin: 1rem !important;
+        }
+        
+        .container > div > div:last-child {
+          display: none !important;
+        }
+      }
+    </style>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>EduLMS</h3>
+          <p>Transform your future with expert-led online learning. Join millions of learners worldwide and master new skills with our comprehensive courses.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="courses.html">All Courses</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+        <div class="footer-section">
+          <h3>Categories</h3>
+          <a href="courses.html">Programming</a>
+          <a href="courses.html">Data Science</a>
+          <a href="courses.html">Digital Marketing</a>
+          <a href="courses.html">Design</a>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <a href="contact.html">Help Center</a>
+          <a href="contact.html">Contact Support</a>
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EduLMS. All rights reserved. | Empowering learners worldwide</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - EduLMS</title>
+  <meta name="description" content="Get in touch with EduLMS. We're here to help with any questions about our courses, platform, or learning support.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/rtl-toggle.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">EduLMS</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="register.html" class="btn btn-primary">Sign Up</a>
+          <button id="rtl-toggle">Switch to RTL</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Contact Us</h1>
+        <p>Have questions? We're here to help! Reach out to our team for support, course recommendations, or any inquiries about EduLMS.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Information -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3">
+        <div class="card text-center">
+          <div class="feature-icon"><i class="fas fa-envelope"></i></div>
+          <h3>Email Support</h3>
+          <p>Get quick responses to your questions via email.</p>
+          <p class="text-primary" style="font-weight: 600;">support@edulms.com</p>
+          <p class="text-muted">Response within 24 hours</p>
+        </div>
+        <div class="card text-center">
+          <div class="feature-icon"><i class="fas fa-comments"></i></div>
+          <h3>Live Chat</h3>
+          <p>Chat with our support team in real-time.</p>
+          <p class="text-primary" style="font-weight: 600;">Available 24/7</p>
+          <p class="text-muted">Instant responses</p>
+        </div>
+        <div class="card text-center">
+          <div class="feature-icon"><i class="fas fa-phone"></i></div>
+          <h3>Phone Support</h3>
+          <p>Speak directly with our course advisors.</p>
+          <p class="text-primary" style="font-weight: 600;">+1 (555) 123-4567</p>
+          <p class="text-muted">Mon-Fri, 9AM-6PM EST</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & Office Locations -->
+  <section class="section bg-surface">
+    <div class="container">
+      <div class="grid grid-2" style="gap: var(--space-8);">
+        <!-- Contact Form -->
+        <div>
+          <h2>Send Us a Message</h2>
+          <p class="mb-6">Fill out the form below and we'll get back to you as soon as possible.</p>
+          
+          <form>
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email address" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <select id="subject" name="subject" class="form-input" required>
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="course">Course Information</option>
+                <option value="technical">Technical Support</option>
+                <option value="billing">Billing & Payment</option>
+                <option value="partnership">Partnership Opportunities</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell us how we can help you..." rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-lg">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Office Locations -->
+        <div>
+          <h2>Our Offices</h2>
+          <p class="mb-6">Visit us at one of our global offices or reach out to our local teams.</p>
+          
+          <div class="card mb-4">
+            <h3>Headquarters - San Francisco</h3>
+            <p class="text-muted">123 Learning Street<br>San Francisco, CA 94105<br>United States</p>
+            <p class="text-primary" style="font-weight: 600;">+1 (555) 123-4567</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Find quick answers to common questions about our platform and courses.</p>
+      </div>
+      
+      <div class="grid grid-2" style="gap: var(--space-6);">
+        <div class="card">
+          <h3>How do I enroll in a course?</h3>
+          <p>Simply browse our course catalog, select the course you're interested in, and click "Enroll Now." You can start learning immediately after payment confirmation.</p>
+        </div>
+        
+        <div class="card">
+          <h3>What payment methods do you accept?</h3>
+          <p>We accept all major credit cards, PayPal, and bank transfers. We also offer installment plans for courses over $100.</p>
+        </div>
+        
+        <div class="card">
+          <h3>Can I get a refund if I'm not satisfied?</h3>
+          <p>Yes! We offer a 30-day money-back guarantee. If you're not satisfied with your course, contact our support team for a full refund.</p>
+        </div>
+        
+        <div class="card">
+          <h3>Do you offer certificates upon completion?</h3>
+          <p>Absolutely! All our courses provide completion certificates that you can add to your resume and LinkedIn profile.</p>
+        </div>
+        
+        <div class="card">
+          <h3>How long do I have access to my courses?</h3>
+          <p>You have lifetime access to all courses you purchase. You can revisit the content anytime and access updates and new materials.</p>
+        </div>
+        
+        <div class="card">
+          <h3>Is there a mobile app available?</h3>
+          <p>Yes! Our mobile app is available for both iOS and Android devices, allowing you to learn on the go with offline capabilities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support Hours -->
+  <section class="section bg-surface">
+    <div class="container">
+      <div class="text-center">
+        <h2>Support Hours</h2>
+        <p class="section-subtitle">We're here to help you succeed in your learning journey.</p>
+        
+        <div class="flex gap-6" style="justify-content: center; flex-wrap: wrap; max-width: 900px; margin-inline: auto;">
+          <div class="card text-center" style="flex: 1; min-width: 250px;">
+            <h3>Email Support</h3>
+            <p class="text-muted">24/7</p>
+            <p>Response within 24 hours</p>
+          </div>
+          <div class="card text-center" style="flex: 1; min-width: 250px;">
+            <h3>Live Chat</h3>
+            <p class="text-muted">24/7</p>
+            <p>Instant responses</p>
+          </div>
+          <div class="card text-center" style="flex: 1; min-width: 250px;">
+            <h3>Phone Support</h3>
+            <p class="text-muted">Mon-Fri</p>
+            <p>9AM-6PM EST</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section bg-primary">
+    <div class="container">
+      <div class="text-center">
+        <h2 style="color: var(--text-on-primary);">Ready to Start Learning?</h2>
+        <p style="color: rgba(255, 255, 255, 0.9); max-width: 600px; margin-inline: auto; margin-block-end: var(--space-8);">
+          Join thousands of students who have already transformed their careers with EduLMS. Start your learning journey today!
+        </p>
+        <div class="hero-actions">
+          <a href="register.html" class="btn btn-secondary btn-lg">
+            <i class="fas fa-rocket"></i>
+            Get Started Free
+          </a>
+          <a href="courses.html" class="btn btn-outline btn-lg" style="color: var(--text-on-primary); border-color: var(--text-on-primary);">
+            <i class="fas fa-th-large"></i>
+            Browse Courses
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>EduLMS</h3>
+          <p>Transform your future with expert-led online learning. Join millions of learners worldwide and master new skills with our comprehensive courses.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="courses.html">All Courses</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+        <div class="footer-section">
+          <h3>Categories</h3>
+          <a href="courses.html">Programming</a>
+          <a href="courses.html">Data Science</a>
+          <a href="courses.html">Digital Marketing</a>
+          <a href="courses.html">Design</a>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <a href="contact.html">Help Center</a>
+          <a href="contact.html">Contact Support</a>
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EduLMS. All rights reserved. | Empowering learners worldwide</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

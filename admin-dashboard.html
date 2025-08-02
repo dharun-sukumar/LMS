@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | EduLMS</title>
+  <meta name="description" content="Comprehensive admin dashboard for managing EduLMS platform with real-time analytics and metrics.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/rtl-toggle.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="background: var(--background-alt);">
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">EduLMS Admin</a>
+        
+        <!-- Desktop Navigation -->
+        <nav>
+          <ul>
+            <li><a class="active">Dashboard</a></li>
+            <li><a>Courses</a></li>
+            <li><a>Users</a></li>
+            <li><a>Reports</a></li>
+            <li><a>Settings</a></li>
+          </ul>
+        </nav>
+        
+        <div class="header-actions">
+          <div style="position: relative; margin-right: 1rem;">
+            <i class="fas fa-bell" style="color: var(--text-muted); font-size: 1.25rem; cursor: pointer;"></i>
+            <span style="position: absolute; top: -8px; right: -8px; background: var(--danger); color: white; border-radius: 50%; width: 20px; height: 20px; font-size: 0.75rem; display: flex; align-items: center; justify-content: center; font-weight: 600;">3</span>
+          </div>
+          <a href="login.html" class="btn btn-secondary">
+            <i class="fas fa-user"></i>
+            Admin
+          </a>
+          <button id="rtl-toggle">Switch to RTL</button>
+        </div>
+        
+        <!-- Hamburger Menu -->
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <div class="mobile-nav-content">
+      <div class="mobile-nav-header">
+        <a href="index.html" class="logo">EduLMS Admin</a>
+        <button class="mobile-nav-close">&times;</button>
+      </div>
+      <ul>
+        <li><a class="active">Dashboard</a></li>
+        <li><a>Courses</a></li>
+        <li><a>Users</a></li>
+        <li><a>Reports</a></li>
+        <li><a>Settings</a></li>
+      </ul>
+      <div class="mobile-nav-actions">
+        <a href="login.html" class="btn btn-secondary">Admin</a>
+        <button id="rtl-toggle-mobile">Switch to RTL</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dashboard Content -->
+  <section class="section" style="padding-top: 2rem;">
+    <div class="container">
+      
+      <!-- Dashboard Header -->
+      <div style="margin-bottom: 3rem;">
+        <h1 style="font-size: 2.5rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.5rem;">
+          Welcome back, Admin
+        </h1>
+        <p style="color: var(--text-secondary); font-size: 1.125rem;">
+          Here's what's happening with your learning platform today.
+        </p>
+      </div>
+
+      <!-- Key Metrics Cards -->
+      <div class="grid grid-4" style="margin-bottom: 3rem;">
+        <!-- Total Students -->
+        <div class="card" style="padding: 2rem; border-left: 4px solid var(--primary);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+            <div style="width: 50px; height: 50px; background: var(--primary-100); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-users" style="color: var(--primary); font-size: 1.5rem;"></i>
+            </div>
+            <span style="color: var(--success); font-size: 0.875rem; font-weight: 600;">
+              <i class="fas fa-arrow-up"></i> +12.5%
+            </span>
+          </div>
+          <h3 style="font-size: 2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">52,847</h3>
+          <p style="color: var(--text-muted); font-size: 0.875rem; margin: 0;">Total Students</p>
+        </div>
+
+        <!-- Active Courses -->
+        <div class="card" style="padding: 2rem; border-left: 4px solid var(--success);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+            <div style="width: 50px; height: 50px; background: var(--success-light); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-book" style="color: var(--success); font-size: 1.5rem;"></i>
+            </div>
+            <span style="color: var(--success); font-size: 0.875rem; font-weight: 600;">
+              <i class="fas fa-arrow-up"></i> +8.2%
+            </span>
+          </div>
+          <h3 style="font-size: 2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">1,247</h3>
+          <p style="color: var(--text-muted); font-size: 0.875rem; margin: 0;">Active Courses</p>
+        </div>
+
+        <!-- Revenue -->
+        <div class="card" style="padding: 2rem; border-left: 4px solid var(--accent);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+            <div style="width: 50px; height: 50px; background: var(--accent-100); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-dollar-sign" style="color: var(--accent); font-size: 1.5rem;"></i>
+            </div>
+            <span style="color: var(--success); font-size: 0.875rem; font-weight: 600;">
+              <i class="fas fa-arrow-up"></i> +23.1%
+            </span>
+          </div>
+          <h3 style="font-size: 2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">$2.4M</h3>
+          <p style="color: var(--text-muted); font-size: 0.875rem; margin: 0;">Monthly Revenue</p>
+        </div>
+
+        <!-- Completion Rate -->
+        <div class="card" style="padding: 2rem; border-left: 4px solid var(--info);">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+            <div style="width: 50px; height: 50px; background: var(--info-light); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-trophy" style="color: var(--info); font-size: 1.5rem;"></i>
+            </div>
+            <span style="color: var(--success); font-size: 0.875rem; font-weight: 600;">
+              <i class="fas fa-arrow-up"></i> +5.3%
+            </span>
+          </div>
+          <h3 style="font-size: 2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">89.7%</h3>
+          <p style="color: var(--text-muted); font-size: 0.875rem; margin: 0;">Completion Rate</p>
+        </div>
+      </div>
+
+      <!-- Charts and Analytics Row -->
+      <div class="grid grid-2" style="margin-bottom: 3rem; gap: 2rem;">
+        
+        <!-- Revenue Chart -->
+        <div class="card" style="padding: 2rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary);">Revenue Analytics</h3>
+            <select style="padding: 0.5rem 1rem; border: 1px solid var(--border); border-radius: 8px; background: white; color: var(--text-secondary);">
+              <option>Last 6 months</option>
+              <option>Last year</option>
+              <option>All time</option>
+            </select>
+          </div>
+          
+          <!-- Simple Chart Representation -->
+          <div style="height: 200px; background: var(--background-alt); border-radius: 12px; position: relative; padding: 1rem;">
+            <div style="height: 100%; display: flex; align-items: end; gap: 8px;">
+              <div style="width: 30px; height: 60%; background: var(--primary); border-radius: 4px 4px 0 0;"></div>
+              <div style="width: 30px; height: 75%; background: var(--primary); border-radius: 4px 4px 0 0;"></div>
+              <div style="width: 30px; height: 45%; background: var(--primary); border-radius: 4px 4px 0 0;"></div>
+              <div style="width: 30px; height: 90%; background: var(--primary); border-radius: 4px 4px 0 0;"></div>
+              <div style="width: 30px; height: 70%; background: var(--primary); border-radius: 4px 4px 0 0;"></div>
+              <div style="width: 30px; height: 85%; background: var(--primary); border-radius: 4px 4px 0 0;"></div>
+            </div>
+            <div style="position: absolute; bottom: 0.5rem; left: 1rem; right: 1rem; display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted);">
+              <span>Jan</span>
+              <span>Feb</span>
+              <span>Mar</span>
+              <span>Apr</span>
+              <span>May</span>
+              <span>Jun</span>
+            </div>
+          </div>
+          
+          <div style="margin-top: 1rem; text-align: center;">
+            <span style="color: var(--text-muted); font-size: 0.875rem;">
+              <span style="color: var(--success); font-weight: 600;">+15.3%</span> from last period
+            </span>
+          </div>
+        </div>
+
+        <!-- Student Engagement -->
+        <div class="card" style="padding: 2rem;">
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2rem;">Student Engagement</h3>
+          
+          <!-- Engagement Metrics -->
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div style="margin-bottom: 1.5rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="color: var(--text-secondary); font-weight: 500;">Daily Active Users</span>
+                <span style="color: var(--text-primary); font-weight: 700;">18,542</span>
+              </div>
+              <div style="width: 100%; height: 8px; background: var(--background-alt); border-radius: 4px; overflow: hidden;">
+                <div style="width: 78%; height: 100%; background: var(--primary); border-radius: 4px;"></div>
+              </div>
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="color: var(--text-secondary); font-weight: 500;">Course Completions</span>
+                <span style="color: var(--text-primary); font-weight: 700;">3,247</span>
+              </div>
+              <div style="width: 100%; height: 8px; background: var(--background-alt); border-radius: 4px; overflow: hidden;">
+                <div style="width: 65%; height: 100%; background: var(--success); border-radius: 4px;"></div>
+              </div>
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="color: var(--text-secondary); font-weight: 500;">Video Watch Time</span>
+                <span style="color: var(--text-primary); font-weight: 700;">45.2h avg</span>
+              </div>
+              <div style="width: 100%; height: 8px; background: var(--background-alt); border-radius: 4px; overflow: hidden;">
+                <div style="width: 85%; height: 100%; background: var(--accent); border-radius: 4px;"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span style="color: var(--text-secondary); font-weight: 500;">Forum Participation</span>
+                <span style="color: var(--text-primary); font-weight: 700;">7,892</span>
+              </div>
+              <div style="width: 100%; height: 8px; background: var(--background-alt); border-radius: 4px; overflow: hidden;">
+                <div style="width: 42%; height: 100%; background: var(--info); border-radius: 4px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Activity and Top Courses -->
+      <div class="grid grid-2" style="margin-bottom: 3rem; gap: 2rem;">
+        
+        <!-- Recent Activity -->
+        <div class="card" style="padding: 2rem;">
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2rem;">Recent Activity</h3>
+          
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="display: flex; align-items: center; padding: 1rem; background: var(--background-alt); border-radius: 12px; margin-bottom: 1rem;">
+              <div style="width: 40px; height: 40px; background: var(--primary-100); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <i class="fas fa-user-plus" style="color: var(--primary); font-size: 1rem;"></i>
+              </div>
+              <div style="flex: 1;">
+                <p style="margin: 0; font-weight: 600; color: var(--text-primary);">New user registration</p>
+                <p style="margin: 0; font-size: 0.875rem; color: var(--text-muted);">Sarah Johnson joined Web Development course</p>
+              </div>
+              <span style="color: var(--text-muted); font-size: 0.75rem;">2 min ago</span>
+            </div>
+            
+            <div style="display: flex; align-items: center; padding: 1rem; background: var(--background-alt); border-radius: 12px; margin-bottom: 1rem;">
+              <div style="width: 40px; height: 40px; background: var(--success-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <i class="fas fa-graduation-cap" style="color: var(--success); font-size: 1rem;"></i>
+              </div>
+              <div style="flex: 1;">
+                <p style="margin: 0; font-weight: 600; color: var(--text-primary);">Course completed</p>
+                <p style="margin: 0; font-size: 0.875rem; color: var(--text-muted);">Mike Chen finished Data Science Fundamentals</p>
+              </div>
+              <span style="color: var(--text-muted); font-size: 0.75rem;">15 min ago</span>
+            </div>
+            
+            <div style="display: flex; align-items: center; padding: 1rem; background: var(--background-alt); border-radius: 12px; margin-bottom: 1rem;">
+              <div style="width: 40px; height: 40px; background: var(--accent-100); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <i class="fas fa-book" style="color: var(--accent); font-size: 1rem;"></i>
+              </div>
+              <div style="flex: 1;">
+                <p style="margin: 0; font-weight: 600; color: var(--text-primary);">New course published</p>
+                <p style="margin: 0; font-size: 0.875rem; color: var(--text-muted);">Advanced React Patterns by Alex Kim</p>
+              </div>
+              <span style="color: var(--text-muted); font-size: 0.75rem;">1 hour ago</span>
+            </div>
+            
+            <div style="display: flex; align-items: center; padding: 1rem; background: var(--background-alt); border-radius: 12px;">
+              <div style="width: 40px; height: 40px; background: var(--info-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <i class="fas fa-star" style="color: var(--info); font-size: 1rem;"></i>
+              </div>
+              <div style="flex: 1;">
+                <p style="margin: 0; font-weight: 600; color: var(--text-primary);">High rating received</p>
+                <p style="margin: 0; font-size: 0.875rem; color: var(--text-muted);">UI/UX Design course rated 5 stars by Emma Wilson</p>
+              </div>
+              <span style="color: var(--text-muted); font-size: 0.75rem;">3 hours ago</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Top Performing Courses -->
+        <div class="card" style="padding: 2rem;">
+          <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2rem;">Top Performing Courses</h3>
+          
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; border: 1px solid var(--border); border-radius: 12px; margin-bottom: 1rem;">
+              <div style="display: flex; align-items: center;">
+                <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; margin-right: 1rem;"></div>
+                <div>
+                  <h4 style="margin: 0; font-weight: 600; color: var(--text-primary);">Complete Web Development</h4>
+                  <p style="margin: 0; font-size: 0.875rem; color: var(--text-muted);">3,247 enrolled</p>
+                </div>
+              </div>
+              <div style="text-align: right;">
+                <div style="color: var(--success); font-weight: 700; margin-bottom: 0.25rem;">$89,234</div>
+                <div style="color: var(--text-muted); font-size: 0.875rem;">Revenue</div>
+              </div>
+            </div>
+            
+            <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; border: 1px solid var(--border); border-radius: 12px; margin-bottom: 1rem;">
+              <div style="display: flex; align-items: center;">
+                <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 8px; margin-right: 1rem;"></div>
+                <div>
+                  <h4 style="margin: 0; font-weight: 600; color: var(--text-primary);">Data Science & Analytics</h4>
+                  <p style="margin: 0; font-size: 0.875rem; color: var(--text-muted);">2,891 enrolled</p>
+                </div>
+              </div>
+              <div style="text-align: right;">
+                <div style="color: var(--success); font-weight: 700; margin-bottom: 0.25rem;">$76,542</div>
+                <div style="color: var(--text-muted); font-size: 0.875rem;">Revenue</div>
+              </div>
+            </div>
+            
+            <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; border: 1px solid var(--border); border-radius: 12px; margin-bottom: 1rem;">
+              <div style="display: flex; align-items: center;">
+                <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 8px; margin-right: 1rem;"></div>
+                <div>
+                  <h4 style="margin: 0; font-weight: 600; color: var(--text-primary);">UI/UX Design Masterclass</h4>
+                  <p style="margin: 0; font-size: 0.875rem; color: var(--text-muted);">2,456 enrolled</p>
+                </div>
+              </div>
+              <div style="text-align: right;">
+                <div style="color: var(--success); font-weight: 700; margin-bottom: 0.25rem;">$64,128</div>
+                <div style="color: var(--text-muted); font-size: 0.875rem;">Revenue</div>
+              </div>
+            </div>
+            
+            <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; border: 1px solid var(--border); border-radius: 12px;">
+              <div style="display: flex; align-items: center;">
+                <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 8px; margin-right: 1rem;"></div>
+                <div>
+                  <h4 style="margin: 0; font-weight: 600; color: var(--text-primary);">Digital Marketing</h4>
+                  <p style="margin: 0; font-size: 0.875rem; color: var(--text-muted);">1,987 enrolled</p>
+                </div>
+              </div>
+              <div style="text-align: right;">
+                <div style="color: var(--success); font-weight: 700; margin-bottom: 0.25rem;">$52,891</div>
+                <div style="color: var(--text-muted); font-size: 0.875rem;">Revenue</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="card" style="padding: 2rem; margin-bottom: 3rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2rem;">Quick Actions</h3>
+        
+        <div class="grid grid-4" style="gap: 1rem;">
+          <button class="btn btn-primary" style="width: 100%; padding: 1.5rem; flex-direction: column; gap: 0.5rem;">
+            <i class="fas fa-plus" style="font-size: 1.5rem;"></i>
+            <span>Add Course</span>
+          </button>
+          
+          <button class="btn btn-secondary" style="width: 100%; padding: 1.5rem; flex-direction: column; gap: 0.5rem;">
+            <i class="fas fa-user-plus" style="font-size: 1.5rem;"></i>
+            <span>Add Instructor</span>
+          </button>
+          
+          <button class="btn btn-outline" style="width: 100%; padding: 1.5rem; flex-direction: column; gap: 0.5rem;">
+            <i class="fas fa-chart-bar" style="font-size: 1.5rem;"></i>
+            <span>View Reports</span>
+          </button>
+          
+          <button class="btn btn-outline" style="width: 100%; padding: 1.5rem; flex-direction: column; gap: 0.5rem;">
+            <i class="fas fa-cog" style="font-size: 1.5rem;"></i>
+            <span>Settings</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>EduLMS Admin</h3>
+          <p>Comprehensive admin dashboard for managing your learning management system with real-time analytics and insights.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Admin Tools</h3>
+          <a href="courses.html">Course Management</a>
+          <a href="user-dashboard.html">User Management</a>
+          <a href="contact.html">Support Center</a>
+          <a href="pricing.html">Billing & Plans</a>
+        </div>
+        <div class="footer-section">
+          <h3>Analytics</h3>
+          <a href="#revenue">Revenue Reports</a>
+          <a href="#engagement">Engagement Metrics</a>
+          <a href="#performance">Performance Data</a>
+          <a href="#trends">Trend Analysis</a>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <a href="contact.html">Admin Help</a>
+          <a href="contact.html">Technical Support</a>
+          <a href="#documentation">Documentation</a>
+          <a href="#api">API Reference</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EduLMS Admin Dashboard. All rights reserved. | Secure & Reliable</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dashboard JavaScript -->
+  <script>
+    // Simulate real-time updates
+    function updateMetrics() {
+      const metricsToUpdate = [
+        { id: 'students', baseValue: 52847 },
+        { id: 'revenue', baseValue: 2400000, prefix: '$', suffix: 'M' },
+        { id: 'completion', baseValue: 89.7, suffix: '%' }
+      ];
+      
+      // This would typically fetch real data from an API
+      // For demo purposes, we'll simulate small changes
+    }
+    
+    // Update dashboard every 30 seconds
+    setInterval(updateMetrics, 30000);
+    
+    // Initialize dashboard
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('Admin Dashboard initialized');
+      updateMetrics();
+    });
+  </script>
+
+  <!-- Responsive Styles -->
+  <style>
+    @media (max-width: 768px) {
+      .grid.grid-4 {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem !important;
+      }
+      
+      .grid.grid-2 {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+      }
+      
+      .card {
+        padding: 1.5rem !important;
+      }
+      
+      h1[style*="font-size: 2.5rem"] {
+        font-size: 2rem !important;
+      }
+      
+      .header-actions > div:first-child {
+        display: none !important;
+      }
+    }
+  </style>
+</body>
+</html>

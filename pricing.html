@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - EduLMS</title>
+  <meta name="description" content="Choose the perfect learning plan for your needs. From individual courses to unlimited access, find the right pricing option for your learning journey.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/rtl-toggle.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">EduLMS</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="pricing.html" class="active">Pricing</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="register.html" class="btn btn-primary">Sign Up</a>
+          <button id="rtl-toggle">Switch to RTL</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Choose Your Learning Plan</h1>
+        <p>Flexible pricing options designed to fit your learning goals and budget. Start with individual courses or unlock unlimited access to our entire library.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Toggle -->
+  <section class="section" style="padding: var(--space-8) 0;">
+    <div class="container">
+      <div class="text-center">
+        <div class="flex items-center justify-center gap-4">
+          <span class="text-lg font-semibold">Monthly</span>
+          <button class="btn btn-primary">
+            <i class="fas fa-calendar-alt"></i>
+            Yearly
+          </button>
+          <span class="text-sm text-accent font-semibold">Save 20%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Plans -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3">
+        <!-- Basic Plan -->
+        <div class="card" style="position: relative;">
+          <div class="text-center">
+            <h3>Basic</h3>
+            <div class="mt-4">
+              <span style="font-size: var(--font-size-5xl); font-weight: 800; color: var(--primary);">$19</span>
+              <span style="color: var(--text-muted);">/month</span>
+            </div>
+            <p class="text-muted">Perfect for individual learners</p>
+          </div>
+          
+          <div class="mt-6">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>Access to 50+ courses</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>HD video content</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>Completion certificates</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>Mobile app access</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-times" style="color: var(--text-muted);"></i>
+                <span style="color: var(--text-muted);">Live Q&A sessions</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-times" style="color: var(--text-muted);"></i>
+                <span style="color: var(--text-muted);">Priority support</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="mt-8">
+            <a href="register.html" class="btn btn-outline btn-lg" style="width: 100%;">
+              <i class="fas fa-rocket"></i>
+              Get Started
+            </a>
+          </div>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="card" style="position: relative; border: 2px solid var(--primary); transform: scale(1.05); z-index: 10; margin-top: var(--space-8);">
+          <div style="position: absolute; top: -24px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: var(--space-3) var(--space-8); border-radius: var(--radius-full); font-size: var(--font-size-xs); font-weight: 800; z-index: 1000; box-shadow: 0 8px 24px rgba(99, 102, 241, 0.4); letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap;">
+            ⭐ MOST POPULAR ⭐
+          </div>
+          
+          <div class="text-center">
+            <h3>Pro</h3>
+            <div class="mt-4">
+              <span style="font-size: var(--font-size-5xl); font-weight: 800; color: var(--primary);">$39</span>
+              <span style="color: var(--text-muted);">/month</span>
+            </div>
+            <p class="text-muted">Best for serious learners</p>
+          </div>
+          
+          <div class="mt-6">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>Access to all 500+ courses</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>HD video content</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>Completion certificates</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>Mobile app access</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>Live Q&A sessions</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>Priority support</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>Download for offline</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="mt-8">
+            <a href="register.html" class="btn btn-primary btn-lg" style="width: 100%;">
+              <i class="fas fa-rocket"></i>
+              Get Started
+            </a>
+          </div>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="card" style="position: relative;">
+          <div class="text-center">
+            <h3>Enterprise</h3>
+            <div class="mt-4">
+              <span style="font-size: var(--font-size-5xl); font-weight: 800; color: var(--primary);">$99</span>
+              <span style="color: var(--text-muted);">/month</span>
+            </div>
+            <p class="text-muted">For teams and organizations</p>
+          </div>
+          
+          <div class="mt-6">
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>Everything in Pro</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>Team management</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>Progress tracking</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>Custom learning paths</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>Dedicated account manager</span>
+              </li>
+              <li style="padding: var(--space-2) 0; display: flex; align-items: center; gap: var(--space-2);">
+                <i class="fas fa-check" style="color: var(--success);"></i>
+                <span>API access</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="mt-8">
+            <a href="contact.html" class="btn btn-outline btn-lg" style="width: 100%;">
+              <i class="fas fa-phone"></i>
+              Contact Sales
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Comparison -->
+  <section class="section bg-surface">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Compare Plans</h2>
+        <p class="section-subtitle">Detailed comparison of what's included in each plan.</p>
+      </div>
+      
+      <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; min-width: 600px;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--border);">
+              <th style="padding: var(--space-4); text-align: start;">Feature</th>
+              <th style="padding: var(--space-4); text-align: center;">Basic</th>
+              <th style="padding: var(--space-4); text-align: center;">Pro</th>
+              <th style="padding: var(--space-4); text-align: center;">Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: var(--space-4);">Course Access</td>
+              <td style="padding: var(--space-4); text-align: center;">50+ courses</td>
+              <td style="padding: var(--space-4); text-align: center;">All 500+ courses</td>
+              <td style="padding: var(--space-4); text-align: center;">All 500+ courses</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: var(--space-4);">Video Quality</td>
+              <td style="padding: var(--space-4); text-align: center;">HD</td>
+              <td style="padding: var(--space-4); text-align: center;">HD</td>
+              <td style="padding: var(--space-4); text-align: center;">4K</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: var(--space-4);">Certificates</td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-check" style="color: var(--success);"></i></td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-check" style="color: var(--success);"></i></td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-check" style="color: var(--success);"></i></td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: var(--space-4);">Mobile App</td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-check" style="color: var(--success);"></i></td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-check" style="color: var(--success);"></i></td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-check" style="color: var(--success);"></i></td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: var(--space-4);">Live Q&A</td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-times" style="color: var(--text-muted);"></i></td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-check" style="color: var(--success);"></i></td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-check" style="color: var(--success);"></i></td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: var(--space-4);">Priority Support</td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-times" style="color: var(--text-muted);"></i></td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-check" style="color: var(--success);"></i></td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-check" style="color: var(--success);"></i></td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: var(--space-4);">Offline Downloads</td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-times" style="color: var(--text-muted);"></i></td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-check" style="color: var(--success);"></i></td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-check" style="color: var(--success);"></i></td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: var(--space-4);">Team Management</td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-times" style="color: var(--text-muted);"></i></td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-times" style="color: var(--text-muted);"></i></td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-check" style="color: var(--success);"></i></td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: var(--space-4);">Progress Tracking</td>
+              <td style="padding: var(--space-4); text-align: center;">Basic</td>
+              <td style="padding: var(--space-4); text-align: center;">Advanced</td>
+              <td style="padding: var(--space-4); text-align: center;">Enterprise</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border);">
+              <td style="padding: var(--space-4);">Account Manager</td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-times" style="color: var(--text-muted);"></i></td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-times" style="color: var(--text-muted);"></i></td>
+              <td style="padding: var(--space-4); text-align: center;"><i class="fas fa-check" style="color: var(--success);"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What Our Students Say</h2>
+        <p class="section-subtitle">Hear from learners who have found the perfect plan for their needs.</p>
+      </div>
+      
+      <div class="grid grid-2">
+        <div class="testimonial">
+          <div class="testimonial-content">
+            "The Pro plan was perfect for my learning goals. I love having access to all courses and the live Q&A sessions are incredibly helpful!"
+          </div>
+          <div class="testimonial-author">Alex Thompson</div>
+          <div class="testimonial-role">Pro Plan Subscriber</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            "Our team uses the Enterprise plan and it's transformed how we approach professional development. The progress tracking is invaluable."
+          </div>
+          <div class="testimonial-author">Maria Garcia</div>
+          <div class="testimonial-role">HR Director, TechCorp</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            "Started with Basic and upgraded to Pro after seeing the value. The offline downloads are a game-changer for my commute!"
+          </div>
+          <div class="testimonial-author">James Wilson</div>
+          <div class="testimonial-role">Software Developer</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            "The pricing is fair and transparent. I appreciate that I can start small and upgrade as my needs grow."
+          </div>
+          <div class="testimonial-author">Lisa Chen</div>
+          <div class="testimonial-role">Marketing Specialist</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section bg-surface">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Common questions about our pricing and plans.</p>
+      </div>
+      
+      <div class="grid grid-2" style="gap: var(--space-6);">
+        <div class="card">
+          <h3>Can I cancel my subscription anytime?</h3>
+          <p>Yes, you can cancel your subscription at any time. You'll continue to have access until the end of your current billing period.</p>
+        </div>
+        
+        <div class="card">
+          <h3>Do you offer refunds?</h3>
+          <p>We offer a 30-day money-back guarantee. If you're not satisfied, contact our support team for a full refund.</p>
+        </div>
+        
+        <div class="card">
+          <h3>Can I switch between plans?</h3>
+          <p>Absolutely! You can upgrade or downgrade your plan at any time. Changes take effect at your next billing cycle.</p>
+        </div>
+        
+        <div class="card">
+          <h3>Is there a free trial?</h3>
+          <p>Yes! We offer a 7-day free trial for all plans. No credit card required to start your trial.</p>
+        </div>
+        
+        <div class="card">
+          <h3>Do you offer student discounts?</h3>
+          <p>Yes, we offer a 20% discount for students with valid student IDs. Contact our support team to verify your student status.</p>
+        </div>
+        
+        <div class="card">
+          <h3>What payment methods do you accept?</h3>
+          <p>We accept all major credit cards, PayPal, and bank transfers. Enterprise customers can also pay by invoice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section bg-primary">
+    <div class="container">
+      <div class="text-center">
+        <h2 style="color: var(--text-on-primary);">Ready to Start Learning?</h2>
+        <p style="color: rgba(255, 255, 255, 0.9); max-width: 600px; margin-inline: auto; margin-block-end: var(--space-8);">
+          Join thousands of students who have already transformed their careers. Start your 7-day free trial today!
+        </p>
+        <div class="hero-actions">
+          <a href="register.html" class="btn btn-secondary btn-lg">
+            <i class="fas fa-rocket"></i>
+            Start Free Trial
+          </a>
+          <a href="contact.html" class="btn btn-outline btn-lg" style="color: var(--text-on-primary); border-color: var(--text-on-primary);">
+            <i class="fas fa-phone"></i>
+            Contact Sales
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>EduLMS</h3>
+          <p>Transform your future with expert-led online learning. Join millions of learners worldwide and master new skills with our comprehensive courses.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="courses.html">All Courses</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+        <div class="footer-section">
+          <h3>Categories</h3>
+          <a href="courses.html">Programming</a>
+          <a href="courses.html">Data Science</a>
+          <a href="courses.html">Digital Marketing</a>
+          <a href="courses.html">Design</a>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <a href="contact.html">Help Center</a>
+          <a href="contact.html">Contact Support</a>
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EduLMS. All rights reserved. | Empowering learners worldwide</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

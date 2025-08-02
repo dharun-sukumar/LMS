@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon | EduLMS</title>
+  <meta name="description" content="Exciting new features are coming to EduLMS. Stay tuned for updates and be the first to know when we launch.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/rtl-toggle.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">EduLMS</a>
+        
+        <!-- Desktop Navigation -->
+        <nav>
+          <ul>
+            <li class="nav-dropdown">
+              <a href="index.html">Home</a>
+              <div class="dropdown-content">
+                <a href="index.html">Home 1</a>
+                <a href="index2.html">Home 2</a>
+              </div>
+            </li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+          </ul>
+        </nav>
+        
+        <div class="header-actions">
+          <a href="login.html" class="btn btn-secondary">Login</a>
+          <a href="register.html" class="btn btn-primary">Sign Up</a>
+          <button id="rtl-toggle">Switch to RTL</button>
+        </div>
+        
+        <!-- Hamburger Menu -->
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <div class="mobile-nav-content">
+      <div class="mobile-nav-header">
+        <a href="index.html" class="logo">EduLMS</a>
+        <button class="mobile-nav-close">&times;</button>
+      </div>
+      <ul>
+        <li><a href="index.html">Home 1</a></li>
+        <li><a href="index2.html">Home 2</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+      <div class="mobile-nav-actions">
+        <a href="login.html" class="btn btn-secondary">Login</a>
+        <a href="register.html" class="btn btn-primary">Sign Up</a>
+        <button id="rtl-toggle-mobile">Switch to RTL</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Coming Soon Section -->
+  <section style="min-height: 90vh; background: linear-gradient(135deg, var(--primary-50) 0%, var(--primary-100) 50%, var(--accent-50) 100%); position: relative; display: flex; align-items: center;">
+    <!-- Background Pattern -->
+    <div class="bg-pattern-dots" style="position: absolute; inset: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 1;">
+      <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+        
+        <!-- Animated Rocket Icon -->
+        <div style="margin-bottom: 3rem;">
+          <div style="display: inline-block; position: relative;">
+            <div style="width: 150px; height: 150px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-xl); animation: pulse 2s infinite;">
+              <i class="fas fa-rocket" style="color: white; font-size: 4rem; transform: rotate(45deg);"></i>
+            </div>
+            
+            <!-- Floating Elements -->
+            <div style="position: absolute; top: -10px; right: -10px; animation: bounce 2s infinite 0.5s;">
+              <div style="width: 30px; height: 30px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-star" style="color: white; font-size: 0.75rem;"></i>
+              </div>
+            </div>
+            
+            <div style="position: absolute; bottom: 10px; left: -15px; animation: bounce 2s infinite 1s;">
+              <div style="width: 25px; height: 25px; background: var(--success); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-plus" style="color: white; font-size: 0.625rem;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div style="margin-bottom: 4rem;">
+          <h1 style="font-size: 4rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1.5rem; line-height: 1.1;">
+            Something <span style="color: var(--primary);">Amazing</span> is Coming
+          </h1>
+          <p style="font-size: 1.5rem; color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.6; max-width: 600px; margin-left: auto; margin-right: auto;">
+            We're crafting an extraordinary learning experience that will revolutionize the way you acquire new skills. Get ready for innovation!
+          </p>
+        </div>
+
+        <!-- Countdown Timer -->
+        <div style="margin-bottom: 4rem;">
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; max-width: 500px; margin: 0 auto;">
+            <div class="card" style="text-align: center; padding: 1.5rem 1rem;">
+              <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;" id="days">00</div>
+              <div style="color: var(--text-muted); font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Days</div>
+            </div>
+            <div class="card" style="text-align: center; padding: 1.5rem 1rem;">
+              <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;" id="hours">00</div>
+              <div style="color: var(--text-muted); font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Hours</div>
+            </div>
+            <div class="card" style="text-align: center; padding: 1.5rem 1rem;">
+              <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;" id="minutes">00</div>
+              <div style="color: var(--text-muted); font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Minutes</div>
+            </div>
+            <div class="card" style="text-align: center; padding: 1.5rem 1rem;">
+              <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.5rem;" id="seconds">00</div>
+              <div style="color: var(--text-muted); font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Seconds</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Email Subscription -->
+        <div style="margin-bottom: 4rem;">
+          <div style="background: white; border-radius: 20px; padding: 3rem; max-width: 600px; margin: 0 auto; box-shadow: var(--shadow-lg);">
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1rem;">Be the First to Know!</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem;">Subscribe to get notified when we launch and receive exclusive early access.</p>
+            
+            <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+              <input type="email" placeholder="Enter your email address" style="flex: 1; padding: 1rem 1.5rem; border: 2px solid var(--border); border-radius: 12px; font-size: 1rem; transition: all var(--transition-fast);" onfocus="this.style.borderColor='var(--primary)'; this.style.boxShadow='0 0 0 3px rgba(99, 102, 241, 0.1)'" onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none'">
+              <button class="btn btn-primary btn-xl">
+                <i class="fas fa-bell"></i>
+                Notify Me
+              </button>
+            </div>
+            
+            <p style="color: var(--text-muted); font-size: 0.875rem; margin: 0;">
+              <i class="fas fa-lock" style="margin-right: 0.5rem;"></i>
+              We respect your privacy. No spam, unsubscribe at any time.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature Preview -->
+        <div style="margin-bottom: 4rem;">
+          <h3 style="font-size: 2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2rem;">What's Coming</h3>
+          <div class="grid grid-3" style="gap: 2rem;">
+            <div style="text-align: center;">
+              <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-lg);">
+                <i class="fas fa-brain" style="color: white; font-size: 2rem;"></i>
+              </div>
+              <h4 style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-primary);">AI-Powered Learning</h4>
+              <p style="color: var(--text-muted); font-size: 0.875rem;">Personalized learning paths powered by artificial intelligence</p>
+            </div>
+            
+            <div style="text-align: center;">
+              <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--accent), var(--accent-dark)); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-lg);">
+                <i class="fas fa-vr-cardboard" style="color: white; font-size: 2rem;"></i>
+              </div>
+              <h4 style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-primary);">VR Learning</h4>
+              <p style="color: var(--text-muted); font-size: 0.875rem;">Immersive virtual reality learning experiences</p>
+            </div>
+            
+            <div style="text-align: center;">
+              <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--success), var(--success-dark)); border-radius: 50%; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-lg);">
+                <i class="fas fa-users" style="color: white; font-size: 2rem;"></i>
+              </div>
+              <h4 style="font-weight: 600; margin-bottom: 0.5rem; color: var(--text-primary);">Live Collaboration</h4>
+              <p style="color: var(--text-muted); font-size: 0.875rem;">Real-time collaboration with peers and mentors</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="index.html" class="btn btn-secondary btn-xl">
+              <i class="fas fa-home"></i>
+              Back to Home
+            </a>
+            <a href="courses.html" class="btn btn-outline btn-xl">
+              <i class="fas fa-book"></i>
+              Current Courses
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>EduLMS</h3>
+          <p>Transform your future with expert-led online learning. Join millions of learners worldwide and master new skills with our comprehensive courses.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="courses.html">All Courses</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="pricing.html">Pricing</a>
+        </div>
+        <div class="footer-section">
+          <h3>Categories</h3>
+          <a href="courses.html">Programming</a>
+          <a href="courses.html">Data Science</a>
+          <a href="courses.html">Digital Marketing</a>
+          <a href="courses.html">Design</a>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <a href="contact.html">Help Center</a>
+          <a href="contact.html">Contact Support</a>
+          <a href="about.html">Privacy Policy</a>
+          <a href="about.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EduLMS. All rights reserved. | Empowering learners worldwide</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Animations and JavaScript -->
+  <style>
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    @media (max-width: 768px) {
+      .grid.grid-3 {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+      }
+      
+      div[style*="grid-template-columns: repeat(4"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem !important;
+      }
+      
+      h1[style*="font-size: 4rem"] {
+        font-size: 2.5rem !important;
+      }
+      
+      div[style*="display: flex; gap: 1rem; margin-bottom: 1.5rem"] {
+        flex-direction: column !important;
+      }
+    }
+  </style>
+
+  <script>
+    // Countdown Timer
+    function updateCountdown() {
+      // Set launch date (30 days from now)
+      const launchDate = new Date();
+      launchDate.setDate(launchDate.getDate() + 30);
+      
+      const now = new Date().getTime();
+      const distance = launchDate.getTime() - now;
+      
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+      document.getElementById('days').textContent = String(days).padStart(2, '0');
+      document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+      
+      if (distance < 0) {
+        document.getElementById('days').textContent = '00';
+        document.getElementById('hours').textContent = '00';
+        document.getElementById('minutes').textContent = '00';
+        document.getElementById('seconds').textContent = '00';
+      }
+    }
+    
+    // Update countdown every second
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
