@@ -1,0 +1,287 @@
+/* ===== RTL-Specific Styles ===== */
+
+/* RTL Typography and Spacing */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+[dir="rtl"] .text-center {
+  text-align: center;
+}
+
+/* RTL Margins and Padding */
+[dir="rtl"] .ml-auto {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .mr-auto {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+/* RTL Flexbox */
+[dir="rtl"] .flex-row {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .justify-start {
+  justify-content: flex-end;
+}
+
+[dir="rtl"] .justify-end {
+  justify-content: flex-start;
+}
+
+/* RTL Navigation */
+[dir="rtl"] nav ul {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .header-actions {
+  flex-direction: row-reverse;
+}
+
+/* RTL Dropdown */
+[dir="rtl"] .dropdown-content {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .nav-dropdown:hover .dropdown-content {
+  transform: translateY(0);
+}
+
+/* RTL Mobile Navigation */
+[dir="rtl"] .mobile-nav {
+  left: auto;
+  right: -100%;
+}
+
+[dir="rtl"] .mobile-nav.active {
+  right: 0;
+}
+
+/* RTL Buttons and Links */
+[dir="rtl"] .btn i {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .footer-section a:hover {
+  transform: translateX(-4px);
+}
+
+/* RTL Forms */
+[dir="rtl"] .form-group {
+  text-align: right;
+}
+
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select {
+  text-align: right;
+}
+
+/* RTL Hero Section */
+[dir="rtl"] .hero-content {
+  text-align: right;
+}
+
+[dir="rtl"] .hero-actions {
+  justify-content: flex-end;
+}
+
+/* RTL Cards */
+[dir="rtl"] .card,
+[dir="rtl"] .course-card,
+[dir="rtl"] .learning-path-card {
+  text-align: right;
+}
+
+/* RTL Stats */
+[dir="rtl"] .hero-stats,
+[dir="rtl"] .stats-grid {
+  direction: rtl;
+}
+
+/* RTL Course Meta */
+[dir="rtl"] .course-meta {
+  flex-direction: row-reverse;
+}
+
+/* RTL Success Stories */
+[dir="rtl"] .success-story {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .story-content {
+  text-align: right;
+}
+
+/* RTL Testimonials */
+[dir="rtl"] .testimonial {
+  text-align: right;
+}
+
+/* RTL Tools */
+[dir="rtl"] .tool-card {
+  text-align: right;
+}
+
+/* RTL Animation Adjustments */
+[dir="rtl"] .animate-on-scroll {
+  transform: translateY(30px) translateX(-20px);
+}
+
+[dir="rtl"] .animate-in {
+  transform: translateY(0) translateX(0);
+}
+
+/* RTL Font Adjustments */
+[dir="rtl"] {
+  font-family: 'Cairo', 'Tajawal', 'Inter', sans-serif;
+}
+
+/* RTL Responsive Adjustments */
+@media (max-width: 768px) {
+  [dir="rtl"] .mobile-nav {
+    right: -100%;
+    left: auto;
+  }
+  
+  [dir="rtl"] .mobile-nav.active {
+    right: 0;
+  }
+  
+  [dir="rtl"] .hero-actions {
+    align-items: stretch;
+  }
+}
+
+/* RTL Toggle Button Styling */
+#rtl-toggle,
+#rtl-toggle-mobile {
+  position: relative;
+  overflow: hidden;
+  min-width: 50px;
+  width: 50px;
+  height: 40px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  transition: all var(--transition-normal);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0;
+}
+
+#rtl-toggle:hover,
+#rtl-toggle-mobile:hover {
+  background: var(--primary-50);
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: scale(1.05);
+}
+
+#rtl-toggle .fas,
+#rtl-toggle-mobile .fas {
+  font-size: 0.875rem;
+  transition: transform var(--transition-normal);
+}
+
+#rtl-toggle:hover .fa-globe,
+#rtl-toggle-mobile:hover .fa-globe {
+  transform: rotate(15deg);
+}
+
+#rtl-toggle:hover .fa-arrow-left,
+#rtl-toggle:hover .fa-arrow-right,
+#rtl-toggle-mobile:hover .fa-arrow-left,
+#rtl-toggle-mobile:hover .fa-arrow-right {
+  transform: translateX(2px);
+}
+
+[dir="rtl"] #rtl-toggle:hover .fa-arrow-left,
+[dir="rtl"] #rtl-toggle-mobile:hover .fa-arrow-left {
+  transform: translateX(-2px);
+}
+
+/* Active state for RTL */
+[dir="rtl"] #rtl-toggle,
+[dir="rtl"] #rtl-toggle-mobile {
+  background: var(--primary-50);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* Globe icon animation */
+@keyframes globeSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#rtl-toggle.switching .fa-globe,
+#rtl-toggle-mobile.switching .fa-globe {
+  animation: globeSpin 0.6s ease-in-out;
+}
+
+#rtl-toggle::before,
+#rtl-toggle-mobile::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+#rtl-toggle:hover::before,
+#rtl-toggle-mobile:hover::before {
+  left: 100%;
+}
+
+/* Smooth transitions for RTL switch */
+* {
+  transition: 
+    text-align 0.3s ease,
+    transform 0.3s ease,
+    margin 0.3s ease,
+    padding 0.3s ease;
+}
+
+/* Prevent transition on certain elements */
+.no-rtl-transition {
+  transition: none !important;
+}
+
+/* RTL-specific utilities */
+.rtl-only {
+  display: none;
+}
+
+.ltr-only {
+  display: block;
+}
+
+[dir="rtl"] .rtl-only {
+  display: block;
+}
+
+[dir="rtl"] .ltr-only {
+  display: none;
+}

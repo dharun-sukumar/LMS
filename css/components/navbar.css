@@ -1,0 +1,262 @@
+/* ===== Header & Navigation Component ===== */
+
+/* Header Container */
+header {
+  background: var(--background);
+  border-bottom: 1px solid var(--border-light);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+/* Desktop Navigation */
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition-fast);
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--primary);
+}
+
+/* Header Actions */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+/* RTL Toggle */
+#rtl-toggle,
+#rtl-toggle-mobile {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  min-width: 50px;
+  width: 50px;
+  height: 40px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0;
+}
+
+#rtl-toggle:hover,
+#rtl-toggle-mobile:hover {
+  background: var(--primary-50);
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: scale(1.05);
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  gap: 3px;
+}
+
+.hamburger span {
+  width: 20px;
+  height: 2px;
+  background: var(--text-primary);
+  transition: var(--transition-fast);
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 280px;
+  height: 100vh;
+  background: var(--background);
+  border-right: 1px solid var(--border);
+  transition: var(--transition-normal);
+  z-index: var(--z-modal);
+  overflow-y: auto;
+}
+
+.mobile-nav.active {
+  left: 0;
+}
+
+.mobile-nav-content {
+  padding: 1rem;
+}
+
+.mobile-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.mobile-nav-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  padding: 0.25rem;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-nav li {
+  margin-bottom: 0.5rem;
+}
+
+.mobile-nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: var(--transition-fast);
+}
+
+.mobile-nav a:hover,
+.mobile-nav a.active {
+  background: var(--surface-hover);
+  color: var(--primary);
+}
+
+.mobile-nav-actions {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Dropdown Navigation */
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 0.5rem 0;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: var(--transition-fast);
+  z-index: var(--z-dropdown);
+}
+
+.nav-dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.dropdown-content a:hover {
+  background: var(--surface-hover);
+  color: var(--primary);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .header-content nav {
+    display: none;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  .header-actions .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+  
+  #rtl-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content {
+    padding: 0.75rem 0;
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+  }
+  
+  .header-actions {
+    gap: 0.5rem;
+  }
+  
+  .header-actions .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
