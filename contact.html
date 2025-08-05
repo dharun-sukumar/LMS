@@ -6,7 +6,11 @@
   <title>Contact Us - EduLMS</title>
   <meta name="description" content="Get in touch with EduLMS. We're here to help with any questions about our courses, platform, or learning support.">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/rtl-toggle.js" defer></script>
+  <link rel="stylesheet" href="css/components/navbar.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/components/rtl-toggle.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -18,7 +22,13 @@
         <a href="index.html" class="logo">EduLMS</a>
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li class="nav-dropdown">
+              <a href="index.html">Home</a>
+              <div class="dropdown-content">
+                <a href="index.html">Home 1</a>
+                <a href="index2.html">Home 2</a>
+              </div>
+            </li>
             <li><a href="courses.html">Courses</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html" class="active">Contact</a></li>
@@ -199,15 +209,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         
-        <div class="card">
-          <h3>Lorem Ipsum Access?</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        
-        <div class="card">
-          <h3>Lorem Ipsum App?</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
+
       </div>
     </div>
   </section>
