@@ -384,6 +384,7 @@ nav a:hover {
 
 nav a.active {
   color: var(--primary);
+  padding: 10px 20px;
   background: var(--primary-50);
 }
 
