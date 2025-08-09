@@ -1571,7 +1571,12 @@ html[dir="rtl"] .mobile-nav-content {
   
   .btn-lg {
     width: 100%;
-    max-width: 300px;
+    /* max-width: 300px; */
+  }
+
+  .dash-card {
+    display: flex !important;
+    flex-direction: column;
   }
 }
 
