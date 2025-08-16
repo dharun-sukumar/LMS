@@ -950,7 +950,6 @@ nav a.active {
 /* ===== Course Cards ===== */
 .course-card {
   background: var(--surface);
-  border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: all var(--transition-normal);
@@ -1100,7 +1099,7 @@ html[dir="rtl"] .path-features li::before {
 }
 
 html[dir="rtl"] .path-features li {
-  padding-inline-start: 0;
+  padding-inline-start: var(--space-5);
   padding-inline-end: var(--space-5);
 }
 

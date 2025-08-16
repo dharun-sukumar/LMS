@@ -24,7 +24,7 @@
   <header>
     <div class="container">
       <div class="header-content">
-        <a href="index.html" class="logo">EduLMS Admin</a>
+        <a href="index.html" class="logo">EduLMS</a>
         
  <!-- Desktop Navigation -->
         <nav>
@@ -49,12 +49,6 @@
             </li>
           </ul>
         </nav>
-        
-        <div class="header-actions">
-          <a href="login.html" class="btn btn-secondary">Login</a>
-          <a href="register.html" class="btn btn-primary">Sign Up</a>
-          <button id="rtl-toggle">Switch to RTL</button>
-        </div>
         
         <!-- Hamburger Menu -->
         <button class="hamburger">
@@ -109,7 +103,7 @@
       <div class="grid grid-4" style="margin-bottom: 3rem;">
         <!-- Total Students -->
         <div class="card" style="padding: 2rem; border-left: 4px solid var(--primary);">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+          <div style="display: flex; gap: 1rem; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
             <div style="width: 50px; height: 50px; background: var(--primary-100); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
               <i class="fas fa-users" style="color: var(--primary); font-size: 1.5rem;"></i>
             </div>
@@ -123,7 +117,7 @@
 
         <!-- Active Courses -->
         <div class="card" style="padding: 2rem; border-left: 4px solid var(--success);">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+          <div style="display: flex; gap: 1rem; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
             <div style="width: 50px; height: 50px; background: var(--success-light); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
               <i class="fas fa-book" style="color: var(--success); font-size: 1.5rem;"></i>
             </div>
@@ -137,7 +131,7 @@
 
         <!-- Revenue -->
         <div class="card" style="padding: 2rem; border-left: 4px solid var(--accent);">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+          <div style="display: flex; gap: 1rem; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
             <div style="width: 50px; height: 50px; background: var(--accent-100); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
               <i class="fas fa-dollar-sign" style="color: var(--accent); font-size: 1.5rem;"></i>
             </div>
@@ -151,7 +145,7 @@
 
         <!-- Completion Rate -->
         <div class="card" style="padding: 2rem; border-left: 4px solid var(--info);">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+          <div style="display: flex; gap: 1rem; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
             <div style="width: 50px; height: 50px; background: var(--info-light); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
               <i class="fas fa-trophy" style="color: var(--info); font-size: 1.5rem;"></i>
             </div>
@@ -180,22 +174,7 @@
           
           <!-- Simple Chart Representation -->
           <div style="height: 200px; background: var(--background-alt); border-radius: 12px; position: relative; padding: 1rem;">
-            <div style="height: 100%; display: flex; align-items: end; gap: 8px;">
-              <div style="width: 30px; height: 60%; background: var(--primary); border-radius: 4px 4px 0 0;"></div>
-              <div style="width: 30px; height: 75%; background: var(--primary); border-radius: 4px 4px 0 0;"></div>
-              <div style="width: 30px; height: 45%; background: var(--primary); border-radius: 4px 4px 0 0;"></div>
-              <div style="width: 30px; height: 90%; background: var(--primary); border-radius: 4px 4px 0 0;"></div>
-              <div style="width: 30px; height: 70%; background: var(--primary); border-radius: 4px 4px 0 0;"></div>
-              <div style="width: 30px; height: 85%; background: var(--primary); border-radius: 4px 4px 0 0;"></div>
-            </div>
-            <div style="position: absolute; bottom: 0.5rem; left: 1rem; right: 1rem; display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted);">
-              <span>Jan</span>
-              <span>Feb</span>
-              <span>Mar</span>
-              <span>Apr</span>
-              <span>May</span>
-              <span>Jun</span>
-            </div>
+            <div style=" position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Palce For Graph</div>
           </div>
           
           <div style="margin-top: 1rem; text-align: center;">
@@ -263,7 +242,7 @@
           
           <div style="display: flex; flex-direction: column; gap: 1rem;">
             <div style="display: flex; align-items: center; padding: 1rem; background: var(--background-alt); border-radius: 12px; margin-bottom: 1rem; cursor: pointer;">
-              <div style="width: 40px; height: 40px; background: var(--primary-100); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+              <div style="width: 40px; height: 40px; background: var(--primary-100); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; margin-left: 1rem;">
                 <i class="fas fa-user-plus" style="color: var(--primary); font-size: 1rem;"></i>
               </div>
               <div style="flex: 1;">
@@ -274,7 +253,7 @@
             </div>
             
             <div style="display: flex; align-items: center; padding: 1rem; background: var(--background-alt); border-radius: 12px; margin-bottom: 1rem; cursor: pointer;">
-              <div style="width: 40px; height: 40px; background: var(--success-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+              <div style="width: 40px; height: 40px; background: var(--success-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; margin-left: 1rem">
                 <i class="fas fa-graduation-cap" style="color: var(--success); font-size: 1rem;"></i>
               </div>
               <div style="flex: 1;">
@@ -285,7 +264,7 @@
             </div>
             
             <div style="display: flex; align-items: center; padding: 1rem; background: var(--background-alt); border-radius: 12px; margin-bottom: 1rem; cursor: pointer;">
-              <div style="width: 40px; height: 40px; background: var(--accent-100); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+              <div style="width: 40px; height: 40px; background: var(--accent-100); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; margin-left: 1rem">
                 <i class="fas fa-book" style="color: var(--accent); font-size: 1rem;"></i>
               </div>
               <div style="flex: 1;">
@@ -296,7 +275,7 @@
             </div>
             
             <div style="display: flex; align-items: center; padding: 1rem; background: var(--background-alt); border-radius: 12px; cursor: pointer;">
-              <div style="width: 40px; height: 40px; background: var(--info-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+              <div style="width: 40px; height: 40px; background: var(--info-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; margin-left: 1rem">
                 <i class="fas fa-star" style="color: var(--info); font-size: 1rem;"></i>
               </div>
               <div style="flex: 1;">
@@ -313,8 +292,8 @@
           <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2rem;">Top Performing Courses</h3>
           
           <div style="display: flex; flex-direction: column; gap: 1rem;">
-            <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; border: 1px solid var(--border); border-radius: 12px; margin-bottom: 1rem; cursor: pointer;">
-              <div style="display: flex; align-items: center;">
+            <div class="course-card" style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; border: 1px solid var(--border); border-radius: 12px; margin-bottom: 1rem; cursor: pointer;">
+              <div class="course-card" style="display: flex; align-items: center; gap: 1rem;">
                 <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; margin-right: 1rem;"></div>
                 <div>
                   <h4 style="margin: 0; font-weight: 600; color: var(--text-primary);">Complete Web Development</h4>
@@ -327,8 +306,8 @@
               </div>
             </div>
             
-            <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; border: 1px solid var(--border); border-radius: 12px; margin-bottom: 1rem; cursor: pointer;">
-              <div style="display: flex; align-items: center;">
+            <div class="course-card" style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; border: 1px solid var(--border); border-radius: 12px; margin-bottom: 1rem; cursor: pointer;">
+              <div class="course-card" style="display: flex; align-items: center; gap: 1rem">
                 <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 8px; margin-right: 1rem;"></div>
                 <div>
                   <h4 style="margin: 0; font-weight: 600; color: var(--text-primary);">Data Science & Analytics</h4>
@@ -341,8 +320,8 @@
               </div>
             </div>
             
-            <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; border: 1px solid var(--border); border-radius: 12px; margin-bottom: 1rem; cursor: pointer;">
-              <div style="display: flex; align-items: center;">
+            <div class="course-card" style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; border: 1px solid var(--border); border-radius: 12px; margin-bottom: 1rem; cursor: pointer;">
+              <div class="course-card" style="display: flex; align-items: center; gap: 1rem">
                 <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 8px; margin-right: 1rem;"></div>
                 <div>
                   <h4 style="margin: 0; font-weight: 600; color: var(--text-primary);">UI/UX Design Masterclass</h4>
@@ -355,8 +334,8 @@
               </div>
             </div>
             
-            <div style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; border: 1px solid var(--border); border-radius: 12px; cursor: pointer;">
-              <div style="display: flex; align-items: center;">
+            <div class="course-card" style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; border: 1px solid var(--border); border-radius: 12px; cursor: pointer;">
+              <div class="course-card" style="display: flex; align-items: center; gap: 1rem">
                 <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 8px; margin-right: 1rem;"></div>
                 <div>
                   <h4 style="margin: 0; font-weight: 600; color: var(--text-primary);">Digital Marketing</h4>
@@ -407,7 +386,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
-          <h3>EduLMS Admin</h3>
+          <h3>EduLMS</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
         </div>
         <div class="footer-section">
@@ -433,7 +412,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 EduLMS Admin Dashboard. All rights reserved. | Secure & Reliable</p>
+        <p>&copy; 2025 EduLMS. All rights reserved. | Secure & Reliable</p>
       </div>
     </div>
   </footer>

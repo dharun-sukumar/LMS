@@ -42,6 +42,14 @@ html, body {
 
 /* ===== Mobile (xs: 0px - 480px) ===== */
 @media (max-width: 480px) {
+  .spl-card {
+    margin-top: 7rem;
+  }
+
+  .course-card {
+    flex-direction: column;
+    text-align: center;
+  }
   .container {
     padding: 0 0.75rem;
   }
