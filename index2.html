@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/components/navbar.css">
   <link rel="stylesheet" href="css/components/footer.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/components/hero2.css">
   <script src="js/main.js" defer></script>
   <script src="js/main.js" defer></script>
   <script src="js/components/rtl-toggle.js" defer></script>
@@ -92,14 +93,14 @@
   </div>
 
   <!-- Compact Hero Section with Side-by-Side Layout -->
-  <section class="section">
+  <section class="hero3">
     <div class="container">
       <div class="grid grid-2" style="align-items: center; min-height: 70vh;">
         <div class="hero-content">
-          <h1 style="font-size: 3rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1.5rem; line-height: 1.1;">
-            Lorem Ipsum <span style="color: var(--primary);">Excellence</span>
+          <h1 style="color: white;" style="font-size: 3rem; font-weight: 800; margin-bottom: 1.5rem; line-height: 1.1;">
+            Lorem Ipsum <span style="color:white">Excellence</span>
           </h1>
-          <p style="font-size: 1.25rem; color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.6;">
+          <p style="font-size: 1.25rem; color: white; margin-bottom: 2rem; line-height: 1.6;">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
           </p>
           <div class="hero-actions" style="margin-bottom: 3rem;">
@@ -107,7 +108,7 @@
               <i class="fas fa-graduation-cap"></i>
               Lorem Ipsum
             </a>
-            <a href="about.html" class="btn btn-outline btn-xl">
+            <a href="about.html" style="color: white;" class="btn btn-outline btn-xl">
               <i class="fas fa-info-circle"></i>
               Lorem More
             </a>
@@ -117,33 +118,36 @@
           <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;">
             <div style="text-align: center;">
               <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem;">1M+</div>
-              <div style="color: var(--text-muted); font-size: 0.875rem;">Lorem</div>
+              <div style="color: white; font-size: 0.875rem;">Lorem</div>
             </div>
             <div style="text-align: center;">
               <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem;">750+</div>
-              <div style="color: var(--text-muted); font-size: 0.875rem;">Ipsum</div>
+              <div style="color: white; font-size: 0.875rem;">Ipsum</div>
             </div>
             <div style="text-align: center;">
               <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem;">50+</div>
-              <div style="color: var(--text-muted); font-size: 0.875rem;">Dolor</div>
+              <div style="color: white; font-size: 0.875rem;">Dolor</div>
             </div>
           </div>
         </div>
         
         <div style="position: relative;">
-          <div style="background: linear-gradient(135deg, var(--primary-100), var(--primary-200)); border-radius: 24px; padding: 3rem; text-align: center; position: relative; overflow: hidden;">
-            <div style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: var(--primary-300); border-radius: 50%; opacity: 0.3;"></div>
-            <div style="position: absolute; bottom: -30px; left: -30px; width: 80px; height: 80px; background: var(--accent); border-radius: 50%; opacity: 0.2;"></div>
-            <div style="position: relative; z-index: 2;">
-              <div style="width: 120px; height: 120px; background: var(--primary); border-radius: 50%; margin: 0 auto 2rem; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-lg);">
-                <i class="fas fa-rocket" style="font-size: 3rem; color: white;"></i>
-              </div>
-              <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1rem;">Lorem Ipsum Learning</h3>
-              <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="register.html" class="btn btn-primary">Lorem Ipsum Today</a>
-            </div>
-          </div>
-        </div>
+  <div style="background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('https://cdn.prod.website-files.com/6421c69c26daff7aacff565e/64ff2be25d57b1dc5803d052_Self-directed%20learning.webp'); background-size: cover; background-position: center; border-radius: 24px; padding: 3rem; text-align: center; position: relative; overflow: hidden; color: white;">
+    
+    <div style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: var(--primary-300); border-radius: 50%; opacity: 0.3;"></div>
+    <div style="position: absolute; bottom: -30px; left: -30px; width: 80px; height: 80px; background: var(--accent); border-radius: 50%; opacity: 0.2;"></div>
+    
+    <div style="position: relative; z-index: 2;">
+      <div style="width: 120px; height: 120px; background: var(--primary); border-radius: 50%; margin: 0 auto 2rem; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-lg);">
+        <i class="fas fa-rocket" style="font-size: 3rem; color: white;"></i>
+      </div>
+      <h3 style="font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 1rem;">Lorem Ipsum Learning</h3>
+      <p style="color: white; margin-bottom: 1.5rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a href="register.html" class="btn btn-primary" style="padding: 0.75rem 1.5rem; border-radius: 8px; background: var(--primary); color: white; text-decoration: none; font-weight: 600;">Lorem Ipsum Today</a>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   </section>
@@ -175,7 +179,7 @@
         </div>
         
         <div class="course-card">
-          <div class="course-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); height: 200px; display: flex; align-items: center; justify-content: center;">
+            <div class="background: linear-gradient(135deg, var(--primary-100), var(--primary-200)); border-radius: 24px; padding: 3rem; text-align: center; position: relative; overflow: hidden;">
             <i class="fas fa-palette" style="font-size: 3rem; color: white;"></i>
           </div>
           <div class="course-content">
@@ -233,7 +237,7 @@
           <div class="feature-icon" style="margin: 0 auto 2rem;">
             <i class="fas fa-medal"></i>
           </div>
-          <h3 style="margin-bottom: 1rem;">Lorem Ipsum Learning</h3>
+          <h3 style="margin-bottom: 1rem;font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1rem;">Lorem Ipsum Learning</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         
